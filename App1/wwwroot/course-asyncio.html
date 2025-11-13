@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основы AsyncIO - Code Basics</title>
+    <link rel="stylesheet" href="/css/course-detail.css">
+</head>
+<body>
+    <header class="header">
+    <nav class="nav-container">
+        <div class="logo">
+            <a href="/" style="color: white; text-decoration: none;">CodeBasics</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/courses">Курсы</a></li>
+            <li><a href="/about">О проекте</a></li>
+            <div class="auth-buttons">
+                <li><a href="/session/new" class="btn-outline">Войти</a></li>
+                <li><a href="/users/new" class="btn">Регистрация</a></li>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+    <section class="course-hero asyncio">
+        <div class="course-hero-content">
+            <div class="course-icon">⚡</div>
+            <h1>Основы AsyncIO</h1>
+            <p class="course-description">
+                Освойте асинхронное программирование в Python. Научитесь создавать 
+                высокопроизводительные приложения с помощью async/await.
+            </p>
+            <div class="progress-container">
+                <div class="progress-text">
+                    <span>Прогресс курса</span>
+                    <span>0%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="lessons-container">
+            <div class="lessons-list">
+                <h2>Уроки курса</h2>
+                
+                <!-- Уроки 1-10 -->
+                <div class="lesson-item current">
+                    <div class="lesson-number">1</div>
+                    <div class="lesson-info">
+                        <div class="lesson-title">Введение в асинхронность</div>
+                        <div class="lesson-duration">~30 минут</div>
+                    </div>
+                </div>
+
+                <div class="lesson-item">
+                    <div class="lesson-number">2</div>
+                    <div class="lesson-info">
+                        <div class="lesson-title">Основы async/await</div>
+                        <div class="lesson-duration">~40 минут</div>
+                    </div>
+                </div>
+
+                <div class="lesson-item">
+                    <div class="lesson-number">3</div>
+                    <div class="lesson-info">
+                        <div class="lesson-title">Event Loop и задачи</div>
+                        <div class="lesson-duration">~45 минут</div>
+                    </div>
+                </div>
+
+                <div class="lesson-item">
+                    <div class="lesson-number">4</div>
+                    <div class="lesson-info">
+                        <div class="lesson-title">Асинхронные функции</div>
+                        <div class="lesson-duration">~35 минут</div>
+                    </div>
+                </div>
+
+                <div class="lesson-item">
+                    <div class="lesson-number">5</div>
+                    <div class="lesson-info">
+                        <div class="lesson-title">Работа с несколькими задачами</div>
+                        <div class="lesson-duration">~50 минут</div>
+                    </div>
+                </div>
+
+                <div class="lesson-item">
+                    <div class="lesson-number">6</div>
+                    <div class="lesson-info">
+                        <div class="lesson-title">Асинхронные контекстные менеджеры</div>
+                        <div class="lesson-duration">~40 минут</div>
+                    </div>
+                </div>
+
+                <div class="lesson-item">
+                    <div class="lesson-number">7</div>
+                    <div class="lesson-info">
+                        <div class="lesson-title">Обработка исключений в async</div>
+                        <div class="lesson-duration">~35 минут</div>
+                    </div>
+                </div>
+
+                <div class="lesson-item">
+                    <div class="lesson-number">8</div>
+                    <div class="lesson-info">
+                        <div class="lesson-title">Асинхронные генераторы</div>
+                        <div class="lesson-duration">~45 минут</div>
+                    </div>
+                </div>
+
+                <div class="lesson-item">
+                    <div class="lesson-number">9</div>
+                    <div class="lesson-info">
+                        <div class="lesson-title">Работа с сетью: aiohttp</div>
+                        <div class="lesson-duration">~55 минут</div>
+                    </div>
+                </div>
+
+                <div class="lesson-item">
+                    <div class="lesson-number">10</div>
+                    <div class="lesson-info">
+                        <div class="lesson-title">Базы данных: asyncpg</div>
+                        <div class="lesson-duration">~60 минут</div>
+                    </div>
+                </div>
+
+                <!-- Экзамен -->
+                <div class="lesson-item exam-item">
+                    <div class="lesson-number">★</div>
+                    <div class="lesson-info">
+                        <div class="exam-title">Финальный экзамен</div>
+                        <div class="exam-duration">~90 минут</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-sidebar">
+                <div class="sidebar-section">
+                    <h3>Преподаватель</h3>
+                    <div class="instructor-info">
+                        <div class="instructor-avatar">ДИ</div>
+                        <div>
+                            <div style="font-weight: bold;">Дмитрий Иванов</div>
+                            <div style="font-size: 0.9rem; color: #666;">Backend Architect</div>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.9rem; color: #666;">
+                        6+ лет опыта в высоконагруженных системах. Специализация: микросервисы и performance optimization.
+                    </p>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>О курсе</h3>
+                    <ul class="course-stats">
+                        <li><span>Уроков:</span> <span>10</span></li>
+                        <li><span>Практика:</span> <span>10 заданий</span></li>
+                        <li><span>Длительность:</span> <span>10-12 часов</span></li>
+                        <li><span>Уровень:</span> <span>Продвинутый</span></li>
+                        <li><span>Сертификат:</span> <span>Да</span></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Требования</h3>
+                    <ul style="font-size: 0.9rem; color: #666; list-style: none;">
+                        <li>✓ Опыт Python 2+ года</li>
+                        <li>✓ Понимание ООП</li>
+                        <li>✓ Базовые знания сетей</li>
+                        <li>✓ Python 3.7+</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Что вы получите</h3>
+                    <ul style="font-size: 0.9rem; color: #666; list-style: none;">
+                        <li>✓ Навыки асинхронного программирования</li>
+                        <li>✓ Умение работать с высокими нагрузками</li>
+                        <li>✓ Понимание event loop</li>
+                        <li>✓ Практику с реальными кейсами</li>
+                    </ul>
+                </div>
+
+                <a href="#" class="start-btn">Начать первый урок</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 CodeBasics. Все права защищены.</p>
+    </footer>
+
+    <script>
+        // Обработчик кликов по урокам
+        document.querySelectorAll('.lesson-item').forEach(item => {
+            item.addEventListener('click', function() {
+                if (this.classList.contains('exam-item')) {
+                    alert('Экзамен будет доступен после завершения всех уроков');
+                } else {
+                    const lessonNum = this.querySelector('.lesson-number').textContent;
+                    const lessonTitle = this.querySelector('.lesson-title').textContent;
+                    alert(`Переход к уроку ${lessonNum}: ${lessonTitle} (функция в разработке)`);
+                }
+            });
+        });
+
+        // Анимация появления элементов
+        document.addEventListener('DOMContentLoaded', function() {
+            const lessons = document.querySelectorAll('.lesson-item');
+            lessons.forEach((lesson, index) => {
+                lesson.style.opacity = '0';
+                lesson.style.transform = 'translateX(-20px)';
+                lesson.style.transition = 'all 0.5s ease';
+                
+                setTimeout(() => {
+                    lesson.style.opacity = '1';
+                    lesson.style.transform = 'translateX(0)';
+                }, index * 100);
+            });
+
+            // Анимация для сайдбара
+            const sidebarSections = document.querySelectorAll('.sidebar-section');
+            sidebarSections.forEach((section, index) => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'all 0.5s ease';
+                
+                setTimeout(() => {
+                    section.style.opacity = '1';
+                    section.style.transform = 'translateY(0)';
+                }, 600 + index * 200);
+            });
+        });
+    </script>
+</body>
+</html>

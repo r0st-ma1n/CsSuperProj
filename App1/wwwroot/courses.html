@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курсы - Code Basics</title>
+    <link rel="stylesheet" href="/css/courses.css">
+</head>
+<body>
+    <header class="header">
+    <nav class="nav-container">
+        <div class="logo">
+            <a href="/" style="color: white; text-decoration: none;">CodeBasics</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/courses" style="color: #f39c12;">Курсы</a></li>
+            <li><a href="/about">О проекте</a></li>
+            <div class="auth-buttons">
+                <li><a href="/session/new" class="btn-outline">Войти</a></li>
+                <li><a href="/users/new" class="btn">Регистрация</a></li>
+            </div>
+        </ul>
+    </nav>
+</header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Наши курсы</h1>
+            <p>Выберите курс, который подходит именно вам, и начните свой путь в программировании</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="courses-grid">
+            <!-- Курс Python -->
+            <div class="course-card" onclick="location.href='/courses/python'">
+                <div class="course-header python">
+                    <div class="course-icon">🐍</div>
+                    <h2 class="course-title">Основы Python</h2>
+                    <div class="course-level">Для начинающих</div>
+                </div>
+                <div class="course-body">
+                    <p class="course-description">
+                        Изучите основы программирования на одном из самых популярных языков. 
+                        От переменных до функций и ООП.
+                    </p>
+                    <ul class="course-features">
+                        <li>10 практических заданий</li>
+                        <li>Интерактивная среда</li>
+                        <li>Финальный экзамен</li>
+                        <li>Сертификат об окончании</li>
+                    </ul>
+                    <a href="/courses/python" class="course-btn">Начать обучение</a>
+                </div>
+            </div>
+
+            <!-- Курс ML -->
+            <div class="course-card" onclick="location.href='/courses/ml'">
+                <div class="course-header ml">
+                    <div class="course-icon">🤖</div>
+                    <h2 class="course-title">Основы ML-разработки</h2>
+                    <div class="course-level">Средний уровень</div>
+                </div>
+                <div class="course-body">
+                    <p class="course-description">
+                        Погрузитесь в мир машинного обучения. Создавайте свои первые модели 
+                        и решайте реальные задачи.
+                    </p>
+                    <ul class="course-features">
+                        <li>10 практических проектов</li>
+                        <li>Работа с реальными данными</li>
+                        <li>Финальный экзамен</li>
+                        <li>Сертификат об окончании</li>
+                    </ul>
+                    <a href="/courses/ml" class="course-btn">Начать обучение</a>
+                </div>
+            </div>
+
+            <!-- Курс AsyncIO -->
+            <div class="course-card" onclick="location.href='/courses/asyncio'">
+                <div class="course-header asyncio">
+                    <div class="course-icon">⚡</div>
+                    <h2 class="course-title">Основы AsyncIO</h2>
+                    <div class="course-level">Продвинутый уровень</div>
+                </div>
+                <div class="course-body">
+                    <p class="course-description">
+                        Освойте асинхронное программирование в Python. Создавайте быстрые 
+                        и эффективные приложения.
+                    </p>
+                    <ul class="course-features">
+                        <li>10 сложных заданий</li>
+                        <li>Асинхронные паттерны</li>
+                        <li>Финальный экзамен</li>
+                        <li>Сертификат об окончании</li>
+                    </ul>
+                    <a href="/courses/asyncio" class="course-btn">Начать обучение</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 CodeBasics. Все права защищены.</p>
+    </footer>
+
+    <script>
+        // Добавляем анимацию появления карточек
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.course-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'all 0.6s ease';
+                
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 200);
+            });
+        });
+    </script>
+</body>
+</html>

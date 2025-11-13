@@ -1,0 +1,141 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\MyProjects\\CsLastTry\\CSharpICONOC_SHIT\\App1\\wwwroot\\about.html",
+      "PackagePath": "staticwebassets\\about.html"
+    },
+    {
+      "Id": "C:\\MyProjects\\CsLastTry\\CSharpICONOC_SHIT\\App1\\wwwroot\\course-asyncio.html",
+      "PackagePath": "staticwebassets\\course-asyncio.html"
+    },
+    {
+      "Id": "C:\\MyProjects\\CsLastTry\\CSharpICONOC_SHIT\\App1\\wwwroot\\course-ml.html",
+      "PackagePath": "staticwebassets\\course-ml.html"
+    },
+    {
+      "Id": "C:\\MyProjects\\CsLastTry\\CSharpICONOC_SHIT\\App1\\wwwroot\\course-python.html",
+      "PackagePath": "staticwebassets\\course-python.html"
+    },
+    {
+      "Id": "C:\\MyProjects\\CsLastTry\\CSharpICONOC_SHIT\\App1\\wwwroot\\courses.html",
+      "PackagePath": "staticwebassets\\courses.html"
+    },
+    {
+      "Id": "C:\\MyProjects\\CsLastTry\\CSharpICONOC_SHIT\\App1\\wwwroot\\css\\about.css",
+      "PackagePath": "staticwebassets\\css\\about.css"
+    },
+    {
+      "Id": "C:\\MyProjects\\CsLastTry\\CSharpICONOC_SHIT\\App1\\wwwroot\\css\\course-detail.css",
+      "PackagePath": "staticwebassets\\css\\course-detail.css"
+    },
+    {
+      "Id": "C:\\MyProjects\\CsLastTry\\CSharpICONOC_SHIT\\App1\\wwwroot\\css\\courses.css",
+      "PackagePath": "staticwebassets\\css\\courses.css"
+    },
+    {
+      "Id": "C:\\MyProjects\\CsLastTry\\CSharpICONOC_SHIT\\App1\\wwwroot\\css\\lesson.css",
+      "PackagePath": "staticwebassets\\css\\lesson.css"
+    },
+    {
+      "Id": "C:\\MyProjects\\CsLastTry\\CSharpICONOC_SHIT\\App1\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "C:\\MyProjects\\CsLastTry\\CSharpICONOC_SHIT\\App1\\wwwroot\\css\\register.css",
+      "PackagePath": "staticwebassets\\css\\register.css"
+    },
+    {
+      "Id": "C:\\MyProjects\\CsLastTry\\CSharpICONOC_SHIT\\App1\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\MyProjects\\CsLastTry\\CSharpICONOC_SHIT\\App1\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\MyProjects\\CsLastTry\\CSharpICONOC_SHIT\\App1\\wwwroot\\js\\login.js",
+      "PackagePath": "staticwebassets\\js\\login.js"
+    },
+    {
+      "Id": "C:\\MyProjects\\CsLastTry\\CSharpICONOC_SHIT\\App1\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\MyProjects\\CsLastTry\\CSharpICONOC_SHIT\\App1\\wwwroot\\js\\register.js",
+      "PackagePath": "staticwebassets\\js\\register.js"
+    },
+    {
+      "Id": "C:\\MyProjects\\CsLastTry\\CSharpICONOC_SHIT\\App1\\wwwroot\\lessons\\python\\exam.html",
+      "PackagePath": "staticwebassets\\lessons\\python\\exam.html"
+    },
+    {
+      "Id": "C:\\MyProjects\\CsLastTry\\CSharpICONOC_SHIT\\App1\\wwwroot\\lessons\\python\\lesson1.html",
+      "PackagePath": "staticwebassets\\lessons\\python\\lesson1.html"
+    },
+    {
+      "Id": "C:\\MyProjects\\CsLastTry\\CSharpICONOC_SHIT\\App1\\wwwroot\\lessons\\python\\lesson10.html",
+      "PackagePath": "staticwebassets\\lessons\\python\\lesson10.html"
+    },
+    {
+      "Id": "C:\\MyProjects\\CsLastTry\\CSharpICONOC_SHIT\\App1\\wwwroot\\lessons\\python\\lesson2.html",
+      "PackagePath": "staticwebassets\\lessons\\python\\lesson2.html"
+    },
+    {
+      "Id": "C:\\MyProjects\\CsLastTry\\CSharpICONOC_SHIT\\App1\\wwwroot\\lessons\\python\\lesson3.html",
+      "PackagePath": "staticwebassets\\lessons\\python\\lesson3.html"
+    },
+    {
+      "Id": "C:\\MyProjects\\CsLastTry\\CSharpICONOC_SHIT\\App1\\wwwroot\\lessons\\python\\lesson4.html",
+      "PackagePath": "staticwebassets\\lessons\\python\\lesson4.html"
+    },
+    {
+      "Id": "C:\\MyProjects\\CsLastTry\\CSharpICONOC_SHIT\\App1\\wwwroot\\lessons\\python\\lesson5.html",
+      "PackagePath": "staticwebassets\\lessons\\python\\lesson5.html"
+    },
+    {
+      "Id": "C:\\MyProjects\\CsLastTry\\CSharpICONOC_SHIT\\App1\\wwwroot\\lessons\\python\\lesson6.html",
+      "PackagePath": "staticwebassets\\lessons\\python\\lesson6.html"
+    },
+    {
+      "Id": "C:\\MyProjects\\CsLastTry\\CSharpICONOC_SHIT\\App1\\wwwroot\\lessons\\python\\lesson7.html",
+      "PackagePath": "staticwebassets\\lessons\\python\\lesson7.html"
+    },
+    {
+      "Id": "C:\\MyProjects\\CsLastTry\\CSharpICONOC_SHIT\\App1\\wwwroot\\lessons\\python\\lesson8.html",
+      "PackagePath": "staticwebassets\\lessons\\python\\lesson8.html"
+    },
+    {
+      "Id": "C:\\MyProjects\\CsLastTry\\CSharpICONOC_SHIT\\App1\\wwwroot\\lessons\\python\\lesson9.html",
+      "PackagePath": "staticwebassets\\lessons\\python\\lesson9.html"
+    },
+    {
+      "Id": "C:\\MyProjects\\CsLastTry\\CSharpICONOC_SHIT\\App1\\wwwroot\\login.html",
+      "PackagePath": "staticwebassets\\login.html"
+    },
+    {
+      "Id": "C:\\MyProjects\\CsLastTry\\CSharpICONOC_SHIT\\App1\\wwwroot\\register.html",
+      "PackagePath": "staticwebassets\\register.html"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.App1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.App1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.App1.props",
+      "PackagePath": "build\\App1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.App1.props",
+      "PackagePath": "buildMultiTargeting\\App1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.App1.props",
+      "PackagePath": "buildTransitive\\App1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

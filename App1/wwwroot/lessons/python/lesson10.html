@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок 10: Основы ООП - Code Basics</title>
+    <link rel="stylesheet" href="/css/lesson.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="/">CodeBasics</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/courses">Курсы</a></li>
+                <li><a href="/about">О проекте</a></li>
+                <li><a href="#">Блог</a></li>
+                <div class="auth-buttons">
+                    <li><a href="/session/new" class="btn-outline">Войти</a></li>
+                    <li><a href="/users/new" class="btn">Регистрация</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="lesson-hero">
+        <div class="lesson-hero-content">
+            <div class="lesson-info">
+                <h1>Урок 10: Основы ООП</h1>
+                <div class="lesson-meta">Основы Python • Тест из 3 вопросов</div>
+            </div>
+            <div class="navigation-buttons">
+                <a href="/courses/python/lesson/9" class="nav-btn">← Предыдущий урок</a>
+                <a href="/courses/python/exam" class="nav-btn">Сдать экзамен →</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="lesson-content">
+            <div class="main-content">
+                <div class="video-section">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/videoseries?list=PLDyJYA6aTY1lPWXBPk0gw6gR8fEtPDGKa&index=10"
+                            title="Основы ООП в Python" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-description">
+                        <h2>Тест по основам ООП</h2>
+                        <p>Проверьте свои знания по основам объектно-ориентированного программирования в Python. Ответьте на 3 вопроса по теме урока.</p>
+                    </div>
+                </div>
+
+                <div class="tasks-section">
+                    <h2>Тестовые задания</h2>
+
+                    <!-- Тестовое задание 1 -->
+                    <div class="test-task">
+                        <span class="task-type-badge badge-test">Вопрос 1 из 3</span>
+                        <div class="test-header">
+                            <div class="test-question">
+                                <h4>Конструктор класса</h4>
+                                <p>Что выведет этот код?</p>
+                                <div class="option-code">
+                                    class Student:<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, name, age):<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.name = name<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.age = age<br><br>
+                                    
+                                    student = Student("Анна", 20)<br>
+                                    print(student.name)
+                                </div>
+                            </div>
+                            <div class="test-points">1 балл</div>
+                        </div>
+
+                        <div class="test-options">
+                            <div class="test-option" onclick="selectOption(this)">
+                                <input type="checkbox" id="q1_opt1" name="q1">
+                                <div class="option-content">
+                                    <div class="option-text">A) Ошибка</div>
+                                </div>
+                            </div>
+                            <div class="test-option" onclick="selectOption(this)">
+                                <input type="checkbox" id="q1_opt2" name="q1">
+                                <div class="option-content">
+                                    <div class="option-text">B) Анна</div>
+                                </div>
+                            </div>
+                            <div class="test-option" onclick="selectOption(this)">
+                                <input type="checkbox" id="q1_opt3" name="q1">
+                                <div class="option-content">
+                                    <div class="option-text">C) 20</div>
+                                </div>
+                            </div>
+                            <div class="test-option" onclick="selectOption(this)">
+                                <input type="checkbox" id="q1_opt4" name="q1">
+                                <div class="option-content">
+                                    <div class="option-text">D) None</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="test-feedback feedback-correct" id="feedback1_correct">
+                            ✅ Правильно! Конструктор __init__ инициализирует атрибуты name и age объекта.
+                        </div>
+
+                        <div class="test-feedback feedback-incorrect" id="feedback1_incorrect">
+                            ❌ Неправильно. Вспомните, как работает конструктор класса и как создаются объекты.
+                        </div>
+
+                        <div class="test-actions">
+                            <button class="btn btn-check" onclick="checkAnswer(1, 'q1_opt2')">Проверить ответ</button>
+                            <button class="btn btn-reset" onclick="resetQuestion(1)">Сбросить</button>
+                        </div>
+                    </div>
+
+                    <!-- Тестовое задание 2 -->
+                    <div class="test-task">
+                        <span class="task-type-badge badge-test">Вопрос 2 из 3</span>
+                        <div class="test-header">
+                            <div class="test-question">
+                                <h4>Наследование</h4>
+                                <p>Что означает этот код?</p>
+                                <div class="option-code">
+                                    class Animal:<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;def speak(self):<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pass<br><br>
+                                    
+                                    class Dog(Animal):<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;def speak(self):<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "Гав!"
+                                </div>
+                            </div>
+                            <div class="test-points">1 балл</div>
+                        </div>
+
+                        <div class="test-options">
+                            <div class="test-option" onclick="selectOption(this)">
+                                <input type="checkbox" id="q2_opt1" name="q2">
+                                <div class="option-content">
+                                    <div class="option-text">A) Класс Dog наследует от класса Animal</div>
+                                </div>
+                            </div>
+                            <div class="test-option" onclick="selectOption(this)">
+                                <input type="checkbox" id="q2_opt2" name="q2">
+                                <div class="option-content">
+                                    <div class="option-text">B) Класс Animal наследует от класса Dog</div>
+                                </div>
+                            </div>
+                            <div class="test-option" onclick="selectOption(this)">
+                                <input type="checkbox" id="q2_opt3" name="q2">
+                                <div class="option-content">
+                                    <div class="option-text">C) Классы не связаны</div>
+                                </div>
+                            </div>
+                            <div class="test-option" onclick="selectOption(this)">
+                                <input type="checkbox" id="q2_opt4" name="q2">
+                                <div class="option-content">
+                                    <div class="option-text">D) Ошибка наследования</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="test-feedback feedback-correct" id="feedback2_correct">
+                            ✅ Правильно! Класс Dog наследует от класса Animal и переопределяет метод speak().
+                        </div>
+
+                        <div class="test-feedback feedback-incorrect" id="feedback2_incorrect">
+                            ❌ Неправильно. Вспомните синтаксис наследования в Python.
+                        </div>
+
+                        <div class="test-actions">
+                            <button class="btn btn-check" onclick="checkAnswer(2, 'q2_opt1')">Проверить ответ</button>
+                            <button class="btn btn-reset" onclick="resetQuestion(2)">Сбросить</button>
+                        </div>
+                    </div>
+
+                    <!-- Тестовое задание 3 -->
+                    <div class="test-task">
+                        <span class="task-type-badge badge-test">Вопрос 3 из 3</span>
+                        <div class="test-header">
+                            <div class="test-question">
+                                <h4>Инкапсуляция</h4>
+                                <p>Как правильно объявить защищенный атрибут в классе?</p>
+                            </div>
+                            <div class="test-points">1 балл</div>
+                        </div>
+
+                        <div class="test-options">
+                            <div class="test-option" onclick="selectOption(this)">
+                                <input type="checkbox" id="q3_opt1" name="q3">
+                                <div class="option-content">
+                                    <div class="option-text">A) self._attribute</div>
+                                </div>
+                            </div>
+                            <div class="test-option" onclick="selectOption(this)">
+                                <input type="checkbox" id="q3_opt2" name="q3">
+                                <div class="option-content">
+                                    <div class="option-text">B) self.__attribute</div>
+                                </div>
+                            </div>
+                            <div class="test-option" onclick="selectOption(this)">
+                                <input type="checkbox" id="q3_opt3" name="q3">
+                                <div class="option-content">
+                                    <div class="option-text">C) self.private attribute</div>
+                                </div>
+                            </div>
+                            <div class="test-option" onclick="selectOption(this)">
+                                <input type="checkbox" id="q3_opt4" name="q3">
+                                <div class="option-content">
+                                    <div class="option-text">D) self.@attribute</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="test-feedback feedback-correct" id="feedback3_correct">
+                            ✅ Правильно! Одно подчеркивание _ указывает на защищенный атрибут (convention).
+                        </div>
+
+                        <div class="test-feedback feedback-incorrect" id="feedback3_incorrect">
+                            ❌ Неправильно. Вспомните соглашения об именовании атрибутов в Python.
+                        </div>
+
+                        <div class="test-actions">
+                            <button class="btn btn-check" onclick="checkAnswer(3, 'q3_opt1')">Проверить ответ</button>
+                            <button class="btn btn-reset" onclick="resetQuestion(3)">Сбросить</button>
+                        </div>
+                    </div>
+
+                    <!-- Результаты теста -->
+                    <div class="test-results" id="testResults">
+                        <h3>🎉 Результаты тестирования</h3>
+                        <div class="results-score" id="finalScore">0/3</div>
+                        <div class="results-message" id="resultsMessage"></div>
+
+                        <div class="progress-test">
+                            <div class="progress-test-fill" id="testProgress" style="width: 0%"></div>
+                        </div>
+
+                        <div class="results-details">
+                            <h4>Детали результатов:</h4>
+                            <div id="resultsDetails"></div>
+                        </div>
+
+                        <button class="btn btn-primary" onclick="resetAllQuestions()">Пройти тест заново</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lesson-sidebar">
+                <div class="sidebar-section">
+                    <h3>Уроки курса</h3>
+                    <ul class="lessons-list">
+                        <li><a href="/courses/python/lesson/1">1. Введение в Python и переменные</a></li>
+                        <li><a href="/courses/python/lesson/2">2. Типы данных и операции</a></li>
+                        <li><a href="/courses/python/lesson/3">3. Условные операторы</a></li>
+                        <li><a href="/courses/python/lesson/4">4. Циклы for и while</a></li>
+                        <li><a href="/courses/python/lesson/5">5. Функции и модули</a></li>
+                        <li><a href="/courses/python/lesson/6">6. Работа со списками</a></li>
+                        <li><a href="/courses/python/lesson/7">7. Словари и множества</a></li>
+                        <li><a href="/courses/python/lesson/8">8. Работа с файлами</a></li>
+                        <li><a href="/courses/python/lesson/9">9. Обработка исключений</a></li>
+                        <li><a href="/courses/python/lesson/10" class="current">10. Основы ООП</a></li>
+                        <li><a href="/courses/python/exam">Финальный экзамен</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>О тесте</h3>
+                    <div class="test-stats">
+                        <p><strong>Вопросов:</strong> 3</p>
+                        <p><strong>Баллов:</strong> 3</p>
+                        <p><strong>Темы:</strong> классы, наследование, инкапсуляция, конструктор</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Комментарии и оценки внизу страницы -->
+    <section class="container">
+        <div class="comments-section">
+            <h2>💬 Отзывы о тесте</h2>
+
+            <!-- Форма оценки -->
+            <div class="rating-system">
+                <span class="rating-text">Оцените этот тест:</span>
+                <div class="rating-stars" data-task="lesson">
+                    <span class="star" data-value="1">☆</span>
+                    <span class="star" data-value="2">☆</span>
+                    <span class="star" data-value="3">☆</span>
+                    <span class="star" data-value="4">☆</span>
+                    <span class="star" data-value="5">☆</span>
+                </div>
+                <span class="rating-text" id="currentRatingLesson">Не оценено</span>
+            </div>
+
+            <!-- Форма комментария -->
+            <div class="comment-form">
+                <textarea class="comment-input" placeholder="Оставьте ваш отзыв о тесте..."
+                    data-task="lesson" id="lessonCommentInput"></textarea>
+                <button class="comment-submit" onclick="addLessonComment()">Отправить отзыв</button>
+            </div>
+
+            <!-- Список комментариев -->
+            <div class="comments-list" id="commentsListLesson">
+                <div class="comment-item">
+                    <div class="comment-header">
+                        <span class="comment-author">Алексей Комаров</span>
+                        <span class="comment-date">18.01.2024 10:20</span>
+                    </div>
+                    <div class="comment-text">
+                        Отличные вопросы по основам ООП! Особенно понравился про наследование.
+                    </div>
+                    <div class="comment-rating">
+                        ⭐⭐⭐⭐⭐ (5/5)
+                    </div>
+                </div>
+
+                <div class="comment-item">
+                    <div class="comment-header">
+                        <span class="comment-author">Татьяна Орлова</span>
+                        <span class="comment-date">17.01.2024 15:40</span>
+                    </div>
+                    <div class="comment-text">
+                        Тест хорошо проверяет понимание основных концепций ООП. Полезно для практики.
+                    </div>
+                    <div class="comment-rating">
+                        ⭐⭐⭐⭐ (4/5)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 CodeBasics. Все права защищены.</p>
+    </footer>
+
+    <script>
+        // ========== ТЕСТОВЫЕ ЗАДАНИЯ ==========
+        
+        let testResults = {
+            total: 3,
+            correct: 0,
+            answered: 0
+        };
+
+        function selectOption(optionElement) {
+            const question = optionElement.closest('.test-task');
+            const options = question.querySelectorAll('.test-option');
+
+            // Снимаем выделение со всех вариантов в этом вопросе
+            options.forEach(opt => {
+                opt.classList.remove('selected');
+                opt.querySelector('input[type="checkbox"]').checked = false;
+            });
+
+            // Выделяем выбранный вариант
+            optionElement.classList.add('selected');
+            optionElement.querySelector('input[type="checkbox"]').checked = true;
+        }
+
+        function checkAnswer(questionId, correctOptionId) {
+            const question = document.querySelector(`#q${questionId}_opt1`).closest('.test-task');
+            const selectedOption = question.querySelector('.test-option.selected');
+            const correctOption = document.getElementById(correctOptionId);
+
+            if (!selectedOption) {
+                alert('Пожалуйста, выберите вариант ответа');
+                return;
+            }
+
+            // Скрываем все фидбэки
+            hideAllFeedbacks(questionId);
+
+            if (selectedOption.querySelector('input').id === correctOptionId) {
+                // Правильный ответ
+                selectedOption.classList.add('correct');
+                document.getElementById(`feedback${questionId}_correct`).style.display = 'block';
+                testResults.correct++;
+            } else {
+                // Неправильный ответ
+                selectedOption.classList.add('incorrect');
+                correctOption.parentElement.classList.add('correct');
+                document.getElementById(`feedback${questionId}_incorrect`).style.display = 'block';
+            }
+
+            testResults.answered++;
+            updateTestResults();
+
+            // Блокируем возможность изменения ответа
+            const options = question.querySelectorAll('.test-option');
+            options.forEach(opt => {
+                opt.style.pointerEvents = 'none';
+            });
+
+            question.querySelector('.btn-check').disabled = true;
+        }
+
+        function resetQuestion(questionId) {
+            const question = document.querySelector(`#q${questionId}_opt1`).closest('.test-task');
+            const options = question.querySelectorAll('.test-option');
+
+            // Сбрасываем стили
+            options.forEach(opt => {
+                opt.classList.remove('selected', 'correct', 'incorrect');
+                opt.querySelector('input[type="checkbox"]').checked = false;
+                opt.style.pointerEvents = 'auto';
+            });
+
+            // Скрываем фидбэки
+            hideAllFeedbacks(questionId);
+
+            // Активируем кнопки
+            question.querySelector('.btn-check').disabled = false;
+        }
+
+        function hideAllFeedbacks(questionId) {
+            document.getElementById(`feedback${questionId}_correct`).style.display = 'none';
+            document.getElementById(`feedback${questionId}_incorrect`).style.display = 'none';
+        }
+
+        function updateTestResults() {
+            if (testResults.answered === testResults.total) {
+                const percentage = (testResults.correct / testResults.total) * 100;
+                const finalScore = document.getElementById('finalScore');
+                const resultsMessage = document.getElementById('resultsMessage');
+                const testProgress = document.getElementById('testProgress');
+                const resultsDetails = document.getElementById('resultsDetails');
+
+                finalScore.textContent = `${testResults.correct}/${testResults.total}`;
+                testProgress.style.width = `${percentage}%`;
+
+                // Сообщение в зависимости от результата
+                if (percentage >= 80) {
+                    resultsMessage.textContent = 'Отличный результат! Вы отлично усвоили материал по основам ООП.';
+                    resultsMessage.style.color = '#27ae60';
+                } else if (percentage >= 60) {
+                    resultsMessage.textContent = 'Хороший результат! Вы хорошо поняли тему ООП.';
+                    resultsMessage.style.color = '#f39c12';
+                } else {
+                    resultsMessage.textContent = 'Рекомендуется повторить материал по основам ООП.';
+                    resultsMessage.style.color = '#e74c3c';
+                }
+
+                // Детали результатов
+                resultsDetails.innerHTML = `
+                    <p>✅ Правильных ответов: ${testResults.correct}</p>
+                    <p>❌ Неправильных ответов: ${testResults.total - testResults.correct}</p>
+                    <p>📊 Процент правильных: ${percentage.toFixed(1)}%</p>
+                `;
+
+                document.getElementById('testResults').style.display = 'block';
+
+                // Прокрутка к результатам
+                document.getElementById('testResults').scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        function resetAllQuestions() {
+            testResults = {
+                total: 3,
+                correct: 0,
+                answered: 0
+            };
+
+            // Сбрасываем все вопросы
+            for (let i = 1; i <= testResults.total; i++) {
+                resetQuestion(i);
+            }
+
+            // Скрываем результаты
+            document.getElementById('testResults').style.display = 'none';
+        }
+
+        // ========== СИСТЕМА КОММЕНТАРИЕВ И ОЦЕНОК ==========
+        
+        // Система оценок
+        document.querySelectorAll('.rating-stars .star').forEach(star => {
+            star.addEventListener('click', function () {
+                const rating = parseInt(this.getAttribute('data-value'));
+                const taskId = this.closest('.rating-stars').getAttribute('data-task');
+                setRating(taskId, rating);
+            });
+
+            star.addEventListener('mouseover', function () {
+                const rating = parseInt(this.getAttribute('data-value'));
+                const stars = this.closest('.rating-stars').querySelectorAll('.star');
+                highlightStars(stars, rating);
+            });
+        });
+
+        document.querySelectorAll('.rating-stars').forEach(starsContainer => {
+            starsContainer.addEventListener('mouseleave', function () {
+                const currentRating = getCurrentRating(this.getAttribute('data-task'));
+                const stars = this.querySelectorAll('.star');
+                if (currentRating > 0) {
+                    highlightStars(stars, currentRating);
+                } else {
+                    resetStars(stars);
+                }
+            });
+        });
+
+        function highlightStars(stars, rating) {
+            resetStars(stars);
+            stars.forEach((star, index) => {
+                if (index < rating) {
+                    star.textContent = '★';
+                    star.classList.add('active');
+                }
+            });
+        }
+
+        function resetStars(stars) {
+            stars.forEach(star => {
+                star.textContent = '☆';
+                star.classList.remove('active');
+            });
+        }
+
+        function setRating(taskId, rating) {
+            // Сохраняем оценку в localStorage
+            localStorage.setItem(`rating_${taskId}`, rating);
+
+            // Обновляем отображение
+            const stars = document.querySelector(`.rating-stars[data-task="${taskId}"]`).querySelectorAll('.star');
+            highlightStars(stars, rating);
+
+            // Обновляем текст
+            document.getElementById(`currentRating${taskId.charAt(0).toUpperCase() + taskId.slice(1)}`).textContent = `${rating}/5`;
+
+            alert(`Спасибо за оценку! Вы поставили ${rating} звезд.`);
+        }
+
+        function getCurrentRating(taskId) {
+            return parseInt(localStorage.getItem(`rating_${taskId}`)) || 0;
+        }
+
+        // Система комментариев для теста
+        function addLessonComment() {
+            const commentInput = document.getElementById('lessonCommentInput');
+            const commentText = commentInput.value.trim();
+
+            if (!commentText) {
+                alert('Пожалуйста, введите текст отзыва');
+                return;
+            }
+
+            const commentsList = document.getElementById('commentsListLesson');
+            const now = new Date();
+            const dateString = now.toLocaleDateString('ru-RU') + ' ' + now.toLocaleTimeString('ru-RU', { hour: '2-digit', minute: '2-digit' });
+
+            // Получаем текущий рейтинг пользователя
+            const userRating = getCurrentRating('lesson');
+            const ratingStars = '⭐'.repeat(userRating) + '☆'.repeat(5 - userRating);
+
+            const newComment = document.createElement('div');
+            newComment.className = 'comment-item';
+            newComment.innerHTML = `
+                <div class="comment-header">
+                    <span class="comment-author">Вы</span>
+                    <span class="comment-date">${dateString}</span>
+                </div>
+                <div class="comment-text">${commentText}</div>
+                <div class="comment-rating">
+                    ${ratingStars} (${userRating}/5)
+                </div>
+            `;
+
+            commentsList.insertBefore(newComment, commentsList.firstChild);
+
+            // Очищаем поле ввода
+            commentInput.value = '';
+
+            alert('Отзыв добавлен!');
+        }
+
+        // Инициализация при загрузке страницы
+        document.addEventListener('DOMContentLoaded', function () {
+            // Восстанавливаем оценки из localStorage
+            document.querySelectorAll('.rating-stars').forEach(starsContainer => {
+                const taskId = starsContainer.getAttribute('data-task');
+                const savedRating = getCurrentRating(taskId);
+                if (savedRating > 0) {
+                    const stars = starsContainer.querySelectorAll('.star');
+                    highlightStars(stars, savedRating);
+                    document.getElementById(`currentRating${taskId.charAt(0).toUpperCase() + taskId.slice(1)}`).textContent = `${savedRating}/5`;
+                }
+            });
+        });
+    </script>
+</body>
+</html>

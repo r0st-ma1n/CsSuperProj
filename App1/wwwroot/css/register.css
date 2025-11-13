@@ -1,0 +1,570 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-outline {
+    border: 2px solid white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: #667eea;
+}
+
+.btn {
+    background: white;
+    color: #667eea;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.register-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.register-form {
+    background: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 480px;
+    margin: 2rem 0;
+}
+
+.register-form .logo {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #667eea;
+    margin-bottom: 1rem;
+}
+
+.register-form h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+/* Стили для выбора роли */
+.role-selection {
+    margin-bottom: 2rem;
+}
+
+.role-selection h3 {
+    color: #555;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.role-options {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.role-option {
+    flex: 1;
+}
+
+.role-option input[type="radio"] {
+    display: none;
+}
+
+.role-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    border: 2px solid #e1e5e9;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: #f8f9fa;
+}
+
+.role-option input[type="radio"]:checked + .role-label {
+    border-color: #667eea;
+    background: rgba(102, 126, 234, 0.05);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.1);
+}
+
+.role-label:hover {
+    border-color: #667eea;
+    transform: translateY(-2px);
+}
+
+.role-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.role-info {
+    flex: 1;
+}
+
+.role-name {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.25rem;
+}
+
+.role-description {
+    font-size: 0.875rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Основные стили формы */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #e1e5e9;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Требования к паролю */
+.password-requirements {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.requirement {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    background: #f8f9fa;
+    color: #666;
+    transition: all 0.3s;
+}
+
+.requirement.valid {
+    background: #d4edda;
+    color: #155724;
+}
+
+.requirement.invalid {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* Чекбоксы */
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-top: 0.25rem;
+    flex-shrink: 0;
+}
+
+.checkbox-group label {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.link {
+    color: #667eea;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Кнопка отправки */
+.register-form .btn {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 1rem;
+}
+
+.register-form .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Ссылки */
+.links {
+    text-align: center;
+    margin: 1.5rem 0;
+    color: #666;
+}
+
+/* Разделитель */
+.divider {
+    text-align: center;
+    margin: 2rem 0;
+    position: relative;
+}
+
+.divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #e1e5e9;
+}
+
+.divider span {
+    background: white;
+    padding: 0 1rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Социальные кнопки */
+.social-register {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.social-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    border: 2px solid #e1e5e9;
+    border-radius: 10px;
+    background: white;
+    color: #333;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.social-btn:hover {
+    border-color: #667eea;
+    transform: translateY(-1px);
+}
+
+.github-btn:hover {
+    border-color: #333;
+    background: #f6f8fa;
+}
+
+.google-btn:hover {
+    border-color: #db4437;
+    background: #f8f9fa;
+}
+
+.social-icon {
+    font-size: 1.1rem;
+}
+
+.back-home {
+    text-align: center;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .auth-buttons {
+        justify-content: center;
+    }
+
+    .register-form {
+        margin: 1rem;
+        padding: 2rem;
+    }
+
+    .role-options {
+        flex-direction: column;
+    }
+
+    .social-register {
+        flex-direction: column;
+    }
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.register-form {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Состояния загрузки */
+.btn.loading {
+    position: relative;
+    color: transparent;
+}
+
+.btn.loading::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Сообщения об ошибках */
+.error-message {
+    color: #e74c3c;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    display: none;
+}
+
+.error-message.show {
+    display: block;
+}
+
+.form-group.error input {
+    border-color: #e74c3c;
+}
+
+.form-group.success input {
+    border-color: #27ae60;
+}
+
+/* Индикатор силы пароля */
+.password-strength {
+    margin-top: 0.5rem;
+    height: 4px;
+    border-radius: 2px;
+    background: #e1e5e9;
+    overflow: hidden;
+}
+
+.strength-bar {
+    height: 100%;
+    width: 0%;
+    transition: all 0.3s;
+}
+
+.strength-weak { background: #e74c3c; width: 25%; }
+.strength-medium { background: #f39c12; width: 50%; }
+.strength-strong { background: #27ae60; width: 75%; }
+.strength-very-strong { background: #2ecc71; width: 100%; }
+
+/* Стили для выбора роли */
+.role-selection {
+    margin-bottom: 2rem;
+}
+
+.role-selection h3 {
+    color: #555;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.role-options {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.role-option {
+    flex: 1;
+    min-width: 0; /* Важно для равномерного распределения */
+}
+
+.role-option input[type="radio"] {
+    display: none;
+}
+
+.role-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    border: 2px solid #e1e5e9;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: #f8f9fa;
+    height: 100%; /* Занимает всю высоту контейнера */
+    min-height: 120px; /* Минимальная высота для одинаковости */
+}
+
+.role-option input[type="radio"]:checked + .role-label {
+    border-color: #667eea;
+    background: rgba(102, 126, 234, 0.05);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.1);
+}
+
+.role-label:hover {
+    border-color: #667eea;
+    transform: translateY(-2px);
+}
+
+.role-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+    margin-top: 0.25rem; /* Выравнивание иконки */
+}
+
+.role-info {
+    flex: 1;
+    min-width: 0; /* Предотвращает выход за границы */
+}
+
+.role-name {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.role-description {
+    font-size: 0.875rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Гарантия одинаковой высоты на мобильных устройствах */
+@media (max-width: 768px) {
+    .role-options {
+        flex-direction: column;
+    }
+    
+    .role-label {
+        min-height: 100px; /* Меньшая высота на мобильных */
+    }
+}
