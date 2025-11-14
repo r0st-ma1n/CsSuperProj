@@ -19,8 +19,12 @@
                 <li><a href="/about">О проекте</a></li>
                 <li><a href="#">Блог</a></li>
                 <div class="auth-buttons">
-                    <li><a href="/session/new" class="btn-outline">Войти</a></li>
-                    <li><a href="/users/new" class="btn">Регистрация</a></li>
+                    <li><a href="/session/new" class="btn-outline" onclick="handleLogin()">Войти</a></li>
+                    <li><a href="/users/new" class="btn" onclick="handleRegister()">Регистрация</a></li>
+                    <li id="userInfo" style="display: none;">
+                        <span id="userName"></span>
+                        <button onclick="handleLogout()" class="btn-outline">Выйти</button>
+                    </li>
                 </div>
             </ul>
         </nav>
@@ -420,7 +424,6 @@
             });
         }
 
-        // Отправка отзыва
         async function submitReview() {
             const commentInput = document.getElementById('lessonCommentInput');
             const commentText = commentInput.value.trim();
@@ -442,13 +445,19 @@
             }
 
             try {
-                const token = localStorage.getItem('authToken'); // Получаем токен из localStorage
+                const token = localStorage.getItem('token');
+                if (!token) {
+                    alert('Пожалуйста, войдите в систему чтобы оставить отзыв');
+                    return;
+                }
+
+                console.log('Sending review with token:', token);
 
                 const response = await fetch(`${API_BASE_URL}/reviews/course/${COURSE_ID}`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'Authorization': token ? `Bearer ${token}` : ''
+                        'Authorization': `Bearer ${token}`
                     },
                     body: JSON.stringify({
                         rating: userRating,
@@ -456,6 +465,8 @@
                         lessonId: LESSON_ID
                     })
                 });
+
+                console.log('Response status:', response.status);
 
                 if (response.ok) {
                     const result = await response.json();
@@ -465,12 +476,18 @@
                     document.getElementById('currentRatingLesson').textContent = 'Не оценено';
                     localStorage.removeItem('rating_lesson');
 
-                    // Перезагружаем отзывы и статистику
                     loadReviews();
                     loadRatingStats();
                 } else {
-                    const error = await response.json();
-                    alert(`Ошибка: ${error.error || 'Не удалось добавить отзыв'}`);
+                    const errorText = await response.text();
+                    console.error('Error response:', errorText);
+
+                    if (response.status === 401) {
+                        alert('Ошибка авторизации. Пожалуйста, войдите снова.');
+                        localStorage.removeItem('token');
+                    } else {
+                        alert(`Ошибка: ${errorText || 'Не удалось добавить отзыв'}`);
+                    }
                 }
             } catch (error) {
                 console.error('Ошибка отправки отзыва:', error);
@@ -750,6 +767,34 @@
                 }
             });
         });
+
+        function handleLogin() {
+            // Редирект на страницу логина или показать модальное окно
+            window.location.href = '/login';
+        }
+
+        function handleRegister() {
+            window.location.href = '/register';
+        }
+
+        function handleLogout() {
+            localStorage.removeItem('token');
+            location.reload();
+        }
+
+        // Проверка авторизации при загрузке
+        function checkAuth() {
+            const token = localStorage.getItem('token');
+            if (token) {
+                // Показываем информацию о пользователе
+                document.getElementById('userInfo').style.display = 'block';
+                document.querySelector('.auth-buttons').querySelectorAll('li')[0].style.display = 'none';
+                document.querySelector('.auth-buttons').querySelectorAll('li')[1].style.display = 'none';
+            }
+        }
+
+        // Вызывайте при загрузке
+        document.addEventListener('DOMContentLoaded', checkAuth);
     </script>
 </body>
 

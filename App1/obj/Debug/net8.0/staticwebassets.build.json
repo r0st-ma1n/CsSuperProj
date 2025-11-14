@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mtWOUcfWLLrm84hUazOFfOTxbtUcb5+DQ/syfzSffZ8=",
+  "Hash": "SBIWaJ6r4zB4BOy2bYPG24ij04AHNVNjQQuKdNBC8RI=",
   "Source": "App1",
   "BasePath": "_content/App1",
   "Mode": "Default",
@@ -409,8 +409,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "1l7zowg72a",
-      "Integrity": "25Z8ZnL0zLWWsNf/okBpNhiVs/cfyiGrq34I0yjBaGM=",
+      "Fingerprint": "rinid9c9ln",
+      "Integrity": "kzgQef/wW/dRVZqYjlB65QVBYUyh+IOmKpb4YdeXMlI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lessons\\python\\lesson1.html"
@@ -619,8 +619,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "we5p904du8",
-      "Integrity": "WO/TpRrT7CCHlb7hMslxE66dW4MufVJKIHO11ZUe1RY=",
+      "Fingerprint": "215dazfh1u",
+      "Integrity": "Sr+Unpt4bN7OSe0RLVeoYBvTa+90qsQNGVJfEQqWsEA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\login.html"
@@ -2125,51 +2125,6 @@
       ]
     },
     {
-      "Route": "lessons/python/lesson1.1l7zowg72a.html",
-      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson1.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "37147"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"25Z8ZnL0zLWWsNf/okBpNhiVs/cfyiGrq34I0yjBaGM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 14 Nov 2025 00:54:27 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "1l7zowg72a"
-        },
-        {
-          "Name": "label",
-          "Value": "lessons/python/lesson1.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-25Z8ZnL0zLWWsNf/okBpNhiVs/cfyiGrq34I0yjBaGM="
-        }
-      ]
-    },
-    {
       "Route": "lessons/python/lesson1.html",
       "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson1.html",
       "Selectors": [],
@@ -2180,7 +2135,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "37147"
+          "Value": "39109"
         },
         {
           "Name": "Content-Type",
@@ -2188,11 +2143,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"25Z8ZnL0zLWWsNf/okBpNhiVs/cfyiGrq34I0yjBaGM=\""
+          "Value": "\"kzgQef/wW/dRVZqYjlB65QVBYUyh+IOmKpb4YdeXMlI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Nov 2025 00:54:27 GMT"
+          "Value": "Fri, 14 Nov 2025 01:17:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2202,7 +2157,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-25Z8ZnL0zLWWsNf/okBpNhiVs/cfyiGrq34I0yjBaGM="
+          "Value": "sha256-kzgQef/wW/dRVZqYjlB65QVBYUyh+IOmKpb4YdeXMlI="
+        }
+      ]
+    },
+    {
+      "Route": "lessons/python/lesson1.rinid9c9ln.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson1.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "39109"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kzgQef/wW/dRVZqYjlB65QVBYUyh+IOmKpb4YdeXMlI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Nov 2025 01:17:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rinid9c9ln"
+        },
+        {
+          "Name": "label",
+          "Value": "lessons/python/lesson1.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kzgQef/wW/dRVZqYjlB65QVBYUyh+IOmKpb4YdeXMlI="
         }
       ]
     },
@@ -2945,6 +2945,51 @@
       ]
     },
     {
+      "Route": "login.215dazfh1u.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\login.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7986"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Sr+Unpt4bN7OSe0RLVeoYBvTa+90qsQNGVJfEQqWsEA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Nov 2025 01:16:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "215dazfh1u"
+        },
+        {
+          "Name": "label",
+          "Value": "login.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Sr+Unpt4bN7OSe0RLVeoYBvTa+90qsQNGVJfEQqWsEA="
+        }
+      ]
+    },
+    {
       "Route": "login.html",
       "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\login.html",
       "Selectors": [],
@@ -2955,7 +3000,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7933"
+          "Value": "7986"
         },
         {
           "Name": "Content-Type",
@@ -2963,11 +3008,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"WO/TpRrT7CCHlb7hMslxE66dW4MufVJKIHO11ZUe1RY=\""
+          "Value": "\"Sr+Unpt4bN7OSe0RLVeoYBvTa+90qsQNGVJfEQqWsEA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
+          "Value": "Fri, 14 Nov 2025 01:16:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2977,52 +3022,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-WO/TpRrT7CCHlb7hMslxE66dW4MufVJKIHO11ZUe1RY="
-        }
-      ]
-    },
-    {
-      "Route": "login.we5p904du8.html",
-      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\login.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7933"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"WO/TpRrT7CCHlb7hMslxE66dW4MufVJKIHO11ZUe1RY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "we5p904du8"
-        },
-        {
-          "Name": "label",
-          "Value": "login.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-WO/TpRrT7CCHlb7hMslxE66dW4MufVJKIHO11ZUe1RY="
+          "Value": "sha256-Sr+Unpt4bN7OSe0RLVeoYBvTa+90qsQNGVJfEQqWsEA="
         }
       ]
     },

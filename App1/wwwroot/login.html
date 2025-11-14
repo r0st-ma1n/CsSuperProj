@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -20,7 +21,7 @@
             align-items: center;
             padding: 20px;
         }
-
+        
         .navbar {
             width: 100%;
             max-width: 1200px;
@@ -31,14 +32,14 @@
             margin-bottom: 30px;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
         }
-
+        
         .nav-links {
             display: flex;
             justify-content: center;
             gap: 30px;
             list-style: none;
         }
-
+        
         .nav-links a {
             text-decoration: none;
             color: #333;
@@ -47,12 +48,12 @@
             border-radius: 8px;
             transition: all 0.3s ease;
         }
-
+        
         .nav-links a:hover {
             background: #667eea;
             color: white;
         }
-
+        
         .login-container {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
@@ -63,12 +64,12 @@
             max-width: 450px;
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
-
+        
         .login-header {
             text-align: center;
             margin-bottom: 35px;
         }
-
+        
         .login-header h1 {
             color: #333;
             font-size: 2.2em;
@@ -77,16 +78,16 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-
+        
         .login-header p {
             color: #666;
             font-size: 1.1em;
         }
-
+        
         .form-group {
             margin-bottom: 20px;
         }
-
+        
         input {
             width: 100%;
             padding: 15px;
@@ -96,13 +97,13 @@
             transition: all 0.3s ease;
             background: #fff;
         }
-
+        
         input:focus {
             outline: none;
             border-color: #667eea;
             box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
         }
-
+        
         .submit-btn {
             width: 100%;
             padding: 16px;
@@ -116,38 +117,36 @@
             transition: all 0.3s ease;
             margin-top: 10px;
         }
-
+        
         .submit-btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
         }
-
+        
         .register-link {
             text-align: center;
             margin-top: 25px;
             color: #666;
         }
-
+        
         .register-link a {
             color: #667eea;
             text-decoration: none;
             font-weight: 500;
         }
-
+        
         .register-link a:hover {
             text-decoration: underline;
         }
-
+        
         @media (max-width: 480px) {
             .login-container {
                 padding: 25px;
                 margin: 10px;
             }
-            
             .navbar {
                 padding: 12px 20px;
             }
-            
             .nav-links {
                 gap: 15px;
                 flex-wrap: wrap;
@@ -155,6 +154,7 @@
         }
     </style>
 </head>
+
 <body>
     <nav class="navbar">
         <ul class="nav-links" id="navMenu">
@@ -190,7 +190,7 @@
         function updateNavigation() {
             const token = localStorage.getItem('token');
             const navMenu = document.getElementById('navMenu');
-            
+
             if (token) {
                 navMenu.innerHTML = `
                     <li><a href="/">Главная</a></li>
@@ -219,23 +219,23 @@
         // ОБРАБОТКА ФОРМЫ ВХОДА - ЭТОГО НЕ БЫЛО В ВАШЕМ ФАЙЛЕ
         document.getElementById('loginForm').addEventListener('submit', async function(e) {
             e.preventDefault();
-            
+
             const formData = {
                 email: document.getElementById('email').value,
                 password: document.getElementById('password').value
             };
-            
+
             try {
                 const response = await fetch('/api/auth/login', {
                     method: 'POST',
-                    headers: { 
+                    headers: {
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify(formData)
                 });
-                
+
                 const data = await response.json();
-                
+
                 if (response.ok) {
                     localStorage.setItem('token', data.token);
                     localStorage.setItem('user', JSON.stringify(data.user));
@@ -252,4 +252,5 @@
         updateNavigation();
     </script>
 </body>
+
 </html>

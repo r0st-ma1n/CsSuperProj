@@ -5,14 +5,16 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using App1.Models; // Добавьте эту строку
-using App1.Data;   // Добавьте эту строку
+using App1.Models;
+using App1.Data;
 
-[ApiController]
-[Route("api/[controller]")]
-public class AuthController : ControllerBase
+namespace App1.Controllers  // ← ДОБАВЬТЕ ЭТУ СТРОЧКУ
 {
-    private readonly ApplicationDbContext _context;
+    [ApiController]
+    [Route("api/[controller]")]
+    public class AuthController : ControllerBase
+    {
+        private readonly ApplicationDbContext _context;
     private readonly IConfiguration _configuration;
 
     public AuthController(ApplicationDbContext context, IConfiguration configuration)
@@ -107,17 +109,18 @@ public class AuthController : ControllerBase
     }
 }
 
-public class RegisterRequest
-{
-    public string Email { get; set; } = string.Empty;
-    public string Password { get; set; } = string.Empty;
-    public string FirstName { get; set; } = string.Empty;
-    public string LastName { get; set; } = string.Empty;
-    public string Role { get; set; } = string.Empty;
-}
+    public class RegisterRequest
+    {
+        public string Email { get; set; } = string.Empty;
+        public string Password { get; set; } = string.Empty;
+        public string FirstName { get; set; } = string.Empty;
+        public string LastName { get; set; } = string.Empty;
+        public string Role { get; set; } = string.Empty;
+    }
 
-public class LoginRequest
-{
-    public string Email { get; set; } = string.Empty;
-    public string Password { get; set; } = string.Empty;
+    public class LoginRequest
+    {
+        public string Email { get; set; } = string.Empty;
+        public string Password { get; set; } = string.Empty;
+    }
 }
