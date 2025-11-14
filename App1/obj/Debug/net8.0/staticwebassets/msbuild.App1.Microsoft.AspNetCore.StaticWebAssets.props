@@ -336,8 +336,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>rinid9c9ln</Fingerprint>
-      <Integrity>kzgQef/wW/dRVZqYjlB65QVBYUyh+IOmKpb4YdeXMlI=</Integrity>
+      <Fingerprint>i3p08w1uir</Fingerprint>
+      <Integrity>8milm3PQuGva/Fo5CYjVYJ+l0g6EGeLDcIp+aeaJ6aQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lessons\python\lesson1.html'))</OriginalItemSpec>
@@ -372,8 +372,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>go43ql1csz</Fingerprint>
-      <Integrity>kOeBDKZnVofjRwWhNF3URu6YtfGtyUUsGr1K/EWJzbA=</Integrity>
+      <Fingerprint>zqjp7si0ar</Fingerprint>
+      <Integrity>O6eEXwUxIz9gcxaKcte57FqB6w/pWaoqWizd6sm4tTc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lessons\python\lesson2.html'))</OriginalItemSpec>

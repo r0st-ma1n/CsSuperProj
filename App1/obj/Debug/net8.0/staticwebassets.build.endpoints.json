@@ -1493,7 +1493,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "39109"
+          "Value": "45507"
         },
         {
           "Name": "Content-Type",
@@ -1501,22 +1501,22 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kzgQef/wW/dRVZqYjlB65QVBYUyh+IOmKpb4YdeXMlI=\""
+          "Value": "\"8milm3PQuGva/Fo5CYjVYJ+l0g6EGeLDcIp+aeaJ6aQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Nov 2025 01:17:51 GMT"
+          "Value": "Fri, 14 Nov 2025 01:50:40 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-kzgQef/wW/dRVZqYjlB65QVBYUyh+IOmKpb4YdeXMlI="
+          "Value": "sha256-8milm3PQuGva/Fo5CYjVYJ+l0g6EGeLDcIp+aeaJ6aQ="
         }
       ]
     },
     {
-      "Route": "lessons/python/lesson1.rinid9c9ln.html",
+      "Route": "lessons/python/lesson1.i3p08w1uir.html",
       "AssetFile": "lessons/python/lesson1.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1530,7 +1530,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "39109"
+          "Value": "45507"
         },
         {
           "Name": "Content-Type",
@@ -1538,21 +1538,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kzgQef/wW/dRVZqYjlB65QVBYUyh+IOmKpb4YdeXMlI=\""
+          "Value": "\"8milm3PQuGva/Fo5CYjVYJ+l0g6EGeLDcIp+aeaJ6aQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Nov 2025 01:17:51 GMT"
+          "Value": "Fri, 14 Nov 2025 01:50:40 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "rinid9c9ln"
+          "Value": "i3p08w1uir"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-kzgQef/wW/dRVZqYjlB65QVBYUyh+IOmKpb4YdeXMlI="
+          "Value": "sha256-8milm3PQuGva/Fo5CYjVYJ+l0g6EGeLDcIp+aeaJ6aQ="
         },
         {
           "Name": "label",
@@ -1643,51 +1643,6 @@
       ]
     },
     {
-      "Route": "lessons/python/lesson2.go43ql1csz.html",
-      "AssetFile": "lessons/python/lesson2.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "29630"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"kOeBDKZnVofjRwWhNF3URu6YtfGtyUUsGr1K/EWJzbA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "go43ql1csz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-kOeBDKZnVofjRwWhNF3URu6YtfGtyUUsGr1K/EWJzbA="
-        },
-        {
-          "Name": "label",
-          "Value": "lessons/python/lesson2.html"
-        }
-      ]
-    },
-    {
       "Route": "lessons/python/lesson2.html",
       "AssetFile": "lessons/python/lesson2.html",
       "Selectors": [],
@@ -1702,7 +1657,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "29630"
+          "Value": "44679"
         },
         {
           "Name": "Content-Type",
@@ -1710,17 +1665,62 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kOeBDKZnVofjRwWhNF3URu6YtfGtyUUsGr1K/EWJzbA=\""
+          "Value": "\"O6eEXwUxIz9gcxaKcte57FqB6w/pWaoqWizd6sm4tTc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
+          "Value": "Fri, 14 Nov 2025 01:50:24 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-kOeBDKZnVofjRwWhNF3URu6YtfGtyUUsGr1K/EWJzbA="
+          "Value": "sha256-O6eEXwUxIz9gcxaKcte57FqB6w/pWaoqWizd6sm4tTc="
+        }
+      ]
+    },
+    {
+      "Route": "lessons/python/lesson2.zqjp7si0ar.html",
+      "AssetFile": "lessons/python/lesson2.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44679"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"O6eEXwUxIz9gcxaKcte57FqB6w/pWaoqWizd6sm4tTc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Nov 2025 01:50:24 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zqjp7si0ar"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-O6eEXwUxIz9gcxaKcte57FqB6w/pWaoqWizd6sm4tTc="
+        },
+        {
+          "Name": "label",
+          "Value": "lessons/python/lesson2.html"
         }
       ]
     },

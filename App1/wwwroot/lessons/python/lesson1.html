@@ -321,14 +321,104 @@
     </footer>
 
     <script>
+        // ========== АВТОРИЗАЦИЯ И ИМЯ ПОЛЬЗОВАТЕЛЯ ==========
+
+        function getToken() {
+            const token = localStorage.getItem('authToken') || localStorage.getItem('token');
+            // Проверяем что токен имеет правильный формат JWT (три части разделенные точками)
+            if (token && token.split('.').length === 3) {
+                return token;
+            }
+            return null;
+        }
+
+
+
+        function initializeAuth() {
+            const token = getToken();
+
+            if (token) {
+                console.log('Токен найден:', token.substring(0, 20) + '...'); // Логируем начало токена
+                showUserInfo(token);
+            } else {
+                console.log('Токен не найден или неверный формат');
+            }
+        }
+
+        function showUserInfo(token) {
+            try {
+                // Правильное декодирование JWT токена
+                const base64Url = token.split('.')[1];
+                const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+                const payload = JSON.parse(decodeURIComponent(atob(base64).split('').map(function(c) {
+                    return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+                }).join('')));
+
+                // Берем имя из разных возможных полей
+                const firstName = payload.FirstName || payload.given_name || '';
+                const lastName = payload.LastName || payload.family_name || '';
+                const userName = firstName && lastName ?
+                    `${firstName} ${lastName}` :
+                    (payload.name || payload.unique_name || payload.email || payload.preferred_username || 'Пользователь');
+
+                updateAuthUI(userName);
+            } catch (e) {
+                console.log('Ошибка декодирования токена:', e);
+                // Если не получается декодировать, просто показываем "Пользователь"
+                updateAuthUI('Пользователь');
+            }
+        }
+
+        function updateAuthUI(userName) {
+            const userInfo = document.getElementById('userInfo');
+            const authButtons = document.querySelector('.auth-buttons');
+
+            if (userInfo && authButtons) {
+                document.getElementById('userName').textContent = userName;
+                userInfo.style.display = 'block';
+
+                // Скрываем кнопки входа/регистрации
+                const loginBtn = authButtons.querySelector('a[href="/session/new"]');
+                const registerBtn = authButtons.querySelector('a[href="/users/new"]');
+                if (loginBtn) loginBtn.parentElement.style.display = 'none';
+                if (registerBtn) registerBtn.parentElement.style.display = 'none';
+            }
+        }
+
+        function initializeAuth() {
+            const token = getToken();
+
+            if (token) {
+                showUserInfo(token);
+                console.log('Пользователь авторизован');
+            } else {
+                console.log('Пользователь не авторизован');
+            }
+        }
+
+        function handleLogin() {
+            window.location.href = '/login';
+        }
+
+        function handleRegister() {
+            window.location.href = '/register';
+        }
+
+        function handleLogout() {
+            localStorage.removeItem('authToken');
+            localStorage.removeItem('token');
+            location.reload();
+        }
+
         // ========== API INTEGRATION ==========
 
-        const API_BASE_URL = 'http://localhost:5086/api'; // Измените на ваш URL
-        const COURSE_ID = 1; // ID курса Python
-        const LESSON_ID = 1; // ID урока
+        const API_BASE_URL = 'http://localhost:5086/api';
+        const COURSE_ID = 1;
+        const LESSON_ID = 1;
 
         // Загрузка отзывов при загрузке страницы
         document.addEventListener('DOMContentLoaded', function() {
+            initializeAuth(); // Инициализация авторизации
             loadReviews();
             loadRatingStats();
 
@@ -384,17 +474,17 @@
             }
 
             commentsList.innerHTML = reviews.map(review => `
-        <div class="comment-item">
-            <div class="comment-header">
-                <span class="comment-author">${review.userFullName}</span>
-                <span class="comment-date">${formatDate(review.createdAt)}</span>
-            </div>
-            <div class="comment-text">${escapeHtml(review.content)}</div>
-            <div class="comment-rating">
-                ${'⭐'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)} (${review.rating}/5)
-            </div>
-        </div>
-    `).join('');
+                <div class="comment-item">
+                    <div class="comment-header">
+                        <span class="comment-author">${review.userFullName}</span>
+                        <span class="comment-date">${formatDate(review.createdAt)}</span>
+                    </div>
+                    <div class="comment-text">${escapeHtml(review.content)}</div>
+                    <div class="comment-rating">
+                        ${'⭐'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)} (${review.rating}/5)
+                    </div>
+                </div>
+            `).join('');
         }
 
         // Отображение статистики оценок
@@ -445,7 +535,7 @@
             }
 
             try {
-                const token = localStorage.getItem('token');
+                const token = getToken();
                 if (!token) {
                     alert('Пожалуйста, войдите в систему чтобы оставить отзыв');
                     return;
@@ -484,6 +574,7 @@
 
                     if (response.status === 401) {
                         alert('Ошибка авторизации. Пожалуйста, войдите снова.');
+                        localStorage.removeItem('authToken');
                         localStorage.removeItem('token');
                     } else {
                         alert(`Ошибка: ${errorText || 'Не удалось добавить отзыв'}`);
@@ -515,6 +606,63 @@
             if (count % 10 >= 2 && count % 10 <= 4 && (count % 100 < 10 || count % 100 >= 20)) return 'отзыва';
             return 'отзывов';
         }
+
+        // ========== СИСТЕМА ОЦЕНОК ==========
+
+        function highlightStars(stars, rating) {
+            resetStars(stars);
+            stars.forEach((star, index) => {
+                if (index < rating) {
+                    star.textContent = '★';
+                    star.classList.add('active');
+                }
+            });
+        }
+
+        function resetStars(stars) {
+            stars.forEach(star => {
+                star.textContent = '☆';
+                star.classList.remove('active');
+            });
+        }
+
+        function setRating(taskId, rating) {
+            localStorage.setItem(`rating_${taskId}`, rating);
+            const stars = document.querySelector(`.rating-stars[data-task="${taskId}"]`).querySelectorAll('.star');
+            highlightStars(stars, rating);
+            document.getElementById(`currentRating${taskId.charAt(0).toUpperCase() + taskId.slice(1)}`).textContent = `${rating}/5`;
+        }
+
+        function getCurrentRating(taskId) {
+            return parseInt(localStorage.getItem(`rating_${taskId}`)) || 0;
+        }
+
+        // Инициализация звезд рейтинга
+        document.querySelectorAll('.rating-stars .star').forEach(star => {
+            star.addEventListener('click', function() {
+                const rating = parseInt(this.getAttribute('data-value'));
+                const taskId = this.closest('.rating-stars').getAttribute('data-task');
+                setRating(taskId, rating);
+            });
+
+            star.addEventListener('mouseover', function() {
+                const rating = parseInt(this.getAttribute('data-value'));
+                const stars = this.closest('.rating-stars').querySelectorAll('.star');
+                highlightStars(stars, rating);
+            });
+        });
+
+        document.querySelectorAll('.rating-stars').forEach(starsContainer => {
+            starsContainer.addEventListener('mouseleave', function() {
+                const currentRating = getCurrentRating(this.getAttribute('data-task'));
+                const stars = this.querySelectorAll('.star');
+                if (currentRating > 0) {
+                    highlightStars(stars, currentRating);
+                } else {
+                    resetStars(stars);
+                }
+            });
+        });
 
         // ========== ТЕСТОВЫЕ ЗАДАНИЯ ==========
 

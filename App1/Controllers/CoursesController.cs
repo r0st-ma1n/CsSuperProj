@@ -119,6 +119,89 @@ public class CoursesController : ControllerBase
     }
 
     [Authorize]
+    [HttpPost("course/{courseId}")]
+    public async Task<ActionResult> CreateReview(int courseId, CreateReviewRequest request)
+    {
+        Console.WriteLine("=== START CREATE REVIEW ===");
+
+        if (!ModelState.IsValid)
+        {
+            Console.WriteLine($"ModelState invalid: {string.Join(", ", ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage))}");
+            return BadRequest(ModelState);
+        }
+
+        try
+        {
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+            Console.WriteLine($"UserId claim: {userIdClaim?.Value}");
+
+            if (userIdClaim == null || !int.TryParse(userIdClaim.Value, out int userId))
+            {
+                Console.WriteLine("Invalid user ID claim");
+                return Unauthorized(new { error = "Неверный токен авторизации" });
+            }
+
+            Console.WriteLine($"Creating review - UserId: {userId}, CourseId: {courseId}, Rating: {request.Rating}, Content: {request.Content}, LessonId: {request.LessonId}");
+
+            // Проверяем пользователя
+            var user = await _context.Users.FindAsync(userId);
+            Console.WriteLine($"User exists: {user != null}");
+
+            // Проверяем курс
+            var course = await _context.Courses.FindAsync(courseId);
+            Console.WriteLine($"Course exists: {course != null}");
+
+            // Создаем отзыв БЕЗ LessonId
+            var review = new Review
+            {
+                UserId = userId,
+                CourseId = courseId,
+                LessonId = null, // Явно указываем null
+                Rating = request.Rating,
+                Content = request.Content,
+                CreatedAt = DateTime.UtcNow
+            };
+
+            Console.WriteLine("Before Add...");
+            _context.Reviews.Add(review);
+
+            Console.WriteLine("Before SaveChanges...");
+            await _context.SaveChangesAsync();
+
+            Console.WriteLine($"Review saved successfully with ID: {review.Id}");
+
+            return Ok(new
+            {
+                message = "Отзыв успешно добавлен",
+                reviewId = review.Id
+            });
+        }
+        catch (DbUpdateException dbEx)
+        {
+            Console.WriteLine($"DB UPDATE EXCEPTION: {dbEx.Message}");
+            Console.WriteLine($"INNER: {dbEx.InnerException?.Message}");
+            Console.WriteLine($"INNER INNER: {dbEx.InnerException?.InnerException?.Message}");
+
+            return BadRequest(new
+            {
+                error = "Database error",
+                message = dbEx.InnerException?.Message,
+                details = dbEx.InnerException?.InnerException?.Message
+            });
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"GENERAL EXCEPTION: {ex}");
+            Console.WriteLine($"Stack: {ex.StackTrace}");
+            return BadRequest(new { error = ex.Message });
+        }
+        finally
+        {
+            Console.WriteLine("=== END CREATE REVIEW ===");
+        }
+    }
+
+    [Authorize]
     [HttpGet("my-courses")]
     public async Task<IActionResult> GetMyCourses()
     {

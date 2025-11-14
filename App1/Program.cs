@@ -228,7 +228,7 @@ app.MapGet("/test-db-connection", async (ApplicationDbContext context) =>
 using (var scope = app.Services.CreateScope())
 {
     var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
-    
+
     // Создаем тестовые курсы если их нет
     if (!context.Courses.Any())
     {
@@ -244,19 +244,40 @@ using (var scope = app.Services.CreateScope())
                 CreatedAt = DateTime.UtcNow,
                 Lessons = new List<Lesson>
                 {
-                    new Lesson { 
-                        Title = "Introduction to Python", 
-                        Content = "Python basics...", 
-                        OrderNumber = 1, 
+                    new Lesson {
+                        Title = "Introduction to Python",
+                        Content = "Python basics...",
+                        OrderNumber = 1,
                         Duration = "1 hour",
-                        CourseId = 1 // Добавьте это свойство
+                        CourseId = 1
                     },
-                    new Lesson { 
-                        Title = "Data Types", 
-                        Content = "Strings, numbers, lists...", 
-                        OrderNumber = 2, 
+                    new Lesson {
+                        Title = "Data Types and Operations",
+                        Content = "Strings, numbers, lists...",
+                        OrderNumber = 2,
                         Duration = "1.5 hours",
-                        CourseId = 1 // Добавьте это свойство
+                        CourseId = 1
+                    },
+                    new Lesson {
+                        Title = "Conditional Statements",
+                        Content = "If-else statements...",
+                        OrderNumber = 3,
+                        Duration = "1 hour",
+                        CourseId = 1
+                    },
+                    new Lesson {
+                        Title = "Loops",
+                        Content = "For and while loops...",
+                        OrderNumber = 4,
+                        Duration = "1.5 hours",
+                        CourseId = 1
+                    },
+                    new Lesson {
+                        Title = "Functions and Modules",
+                        Content = "Functions and modules...",
+                        OrderNumber = 5,
+                        Duration = "2 hours",
+                        CourseId = 1
                     }
                 }
             }
@@ -264,7 +285,7 @@ using (var scope = app.Services.CreateScope())
 
         context.Courses.AddRange(courses);
         await context.SaveChangesAsync();
-        Console.WriteLine("✅ Тестовые курсы созданы!");
+        Console.WriteLine("✅ Тестовые курсы и уроки созданы!");
     }
 }
 
