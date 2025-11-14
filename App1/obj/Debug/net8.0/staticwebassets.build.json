@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Hl+Ah8DP8Yt6OTca2nOb9JocdWEVaLcrWCJ5bA7QmRQ=",
+  "Hash": "kaiztFzV4gL9TgcqGWc+oo3+0oakhjkpEWDC9f+lzss=",
   "Source": "App1",
   "BasePath": "_content/App1",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "App1\\wwwroot",
       "Source": "App1",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\about.html",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\about.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "about#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -38,10 +38,10 @@
       "OriginalItemSpec": "wwwroot\\about.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\course-asyncio.html",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\course-asyncio.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "course-asyncio#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -59,10 +59,10 @@
       "OriginalItemSpec": "wwwroot\\course-asyncio.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\course-ml.html",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\course-ml.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "course-ml#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\course-ml.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\course-python.html",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\course-python.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "course-python#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\course-python.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\courses.html",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\courses.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "courses#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\courses.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\css\\about.css",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\about.css",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "css/about#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\css\\about.css"
     },
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\css\\course-detail.css",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\course-detail.css",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "css/course-detail#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -164,10 +164,10 @@
       "OriginalItemSpec": "wwwroot\\css\\course-detail.css"
     },
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\css\\courses.css",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\courses.css",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "css/courses#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -185,10 +185,10 @@
       "OriginalItemSpec": "wwwroot\\css\\courses.css"
     },
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\css\\lesson.css",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\lesson.css",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "css/lesson#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -206,10 +206,10 @@
       "OriginalItemSpec": "wwwroot\\css\\lesson.css"
     },
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\css\\login.css",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\login.css",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "css/login#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -227,10 +227,10 @@
       "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\css\\register.css",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\register.css",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "css/register#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -248,10 +248,10 @@
       "OriginalItemSpec": "wwwroot\\css\\register.css"
     },
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\css\\style.css",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\style.css",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "css/style#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -269,10 +269,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\dashboard.html",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\dashboard.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "dashboard#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -290,10 +290,10 @@
       "OriginalItemSpec": "wwwroot\\dashboard.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\index.html",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\index.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "index#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -311,10 +311,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\js\\login.js",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\js\\login.js",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "js/login#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -332,10 +332,10 @@
       "OriginalItemSpec": "wwwroot\\js\\login.js"
     },
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\js\\main.js",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\js\\main.js",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "js/main#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -353,10 +353,10 @@
       "OriginalItemSpec": "wwwroot\\js\\main.js"
     },
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\js\\register.js",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\js\\register.js",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "js/register#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\js\\register.js"
     },
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\exam.html",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\exam.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "lessons/python/exam#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -395,10 +395,10 @@
       "OriginalItemSpec": "wwwroot\\lessons\\python\\exam.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson1.html",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson1.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "lessons/python/lesson1#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\lessons\\python\\lesson1.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson10.html",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson10.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "lessons/python/lesson10#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -437,10 +437,10 @@
       "OriginalItemSpec": "wwwroot\\lessons\\python\\lesson10.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson2.html",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson2.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "lessons/python/lesson2#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -458,10 +458,10 @@
       "OriginalItemSpec": "wwwroot\\lessons\\python\\lesson2.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson3.html",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson3.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "lessons/python/lesson3#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -479,10 +479,10 @@
       "OriginalItemSpec": "wwwroot\\lessons\\python\\lesson3.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson4.html",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson4.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "lessons/python/lesson4#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -500,10 +500,10 @@
       "OriginalItemSpec": "wwwroot\\lessons\\python\\lesson4.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson5.html",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson5.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "lessons/python/lesson5#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -521,10 +521,10 @@
       "OriginalItemSpec": "wwwroot\\lessons\\python\\lesson5.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson6.html",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson6.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "lessons/python/lesson6#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -542,10 +542,10 @@
       "OriginalItemSpec": "wwwroot\\lessons\\python\\lesson6.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson7.html",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson7.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "lessons/python/lesson7#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -563,10 +563,10 @@
       "OriginalItemSpec": "wwwroot\\lessons\\python\\lesson7.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson8.html",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson8.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "lessons/python/lesson8#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -584,10 +584,10 @@
       "OriginalItemSpec": "wwwroot\\lessons\\python\\lesson8.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson9.html",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson9.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "lessons/python/lesson9#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -605,10 +605,10 @@
       "OriginalItemSpec": "wwwroot\\lessons\\python\\lesson9.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\login.html",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\login.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "login#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -626,10 +626,10 @@
       "OriginalItemSpec": "wwwroot\\login.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\register.html",
+      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\register.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "register#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -650,7 +650,7 @@
   "Endpoints": [
     {
       "Route": "about.8998qmfxsb.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\about.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\about.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -695,7 +695,7 @@
     },
     {
       "Route": "about.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\about.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\about.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -732,7 +732,7 @@
     },
     {
       "Route": "course-asyncio.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\course-asyncio.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\course-asyncio.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -769,7 +769,7 @@
     },
     {
       "Route": "course-asyncio.hwqxlidwky.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\course-asyncio.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\course-asyncio.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -814,7 +814,7 @@
     },
     {
       "Route": "course-ml.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\course-ml.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\course-ml.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -851,7 +851,7 @@
     },
     {
       "Route": "course-ml.w8bhsi1d4p.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\course-ml.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\course-ml.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -896,7 +896,7 @@
     },
     {
       "Route": "course-python.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\course-python.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\course-python.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -933,7 +933,7 @@
     },
     {
       "Route": "course-python.u8h9ginj0j.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\course-python.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\course-python.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -978,7 +978,7 @@
     },
     {
       "Route": "courses.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\courses.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\courses.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1015,7 +1015,7 @@
     },
     {
       "Route": "courses.ie94o154dp.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\courses.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\courses.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1060,7 +1060,7 @@
     },
     {
       "Route": "css/about.css",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\css\\about.css",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\about.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1097,7 +1097,7 @@
     },
     {
       "Route": "css/about.y3ve48gc59.css",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\css\\about.css",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\about.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1142,7 +1142,7 @@
     },
     {
       "Route": "css/course-detail.bp3fi0ar0z.css",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\css\\course-detail.css",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\course-detail.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1187,7 +1187,7 @@
     },
     {
       "Route": "css/course-detail.css",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\css\\course-detail.css",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\course-detail.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1224,7 +1224,7 @@
     },
     {
       "Route": "css/courses.css",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\css\\courses.css",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\courses.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1261,7 +1261,7 @@
     },
     {
       "Route": "css/courses.rkg0hyjkd2.css",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\css\\courses.css",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\courses.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1306,7 +1306,7 @@
     },
     {
       "Route": "css/lesson.css",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\css\\lesson.css",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\lesson.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1343,7 +1343,7 @@
     },
     {
       "Route": "css/lesson.de2ba7p7dv.css",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\css\\lesson.css",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\lesson.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1388,7 +1388,7 @@
     },
     {
       "Route": "css/login.72pyk5hwrv.css",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\css\\login.css",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\login.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1433,7 +1433,7 @@
     },
     {
       "Route": "css/login.css",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\css\\login.css",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\login.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1470,7 +1470,7 @@
     },
     {
       "Route": "css/register.1b3tqi9ubi.css",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\css\\register.css",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\register.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1515,7 +1515,7 @@
     },
     {
       "Route": "css/register.css",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\css\\register.css",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\register.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1552,7 +1552,7 @@
     },
     {
       "Route": "css/style.css",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\css\\style.css",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\style.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1589,7 +1589,7 @@
     },
     {
       "Route": "css/style.dze9p0yuu4.css",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\css\\style.css",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\style.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1634,7 +1634,7 @@
     },
     {
       "Route": "dashboard.058o7d93tj.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\dashboard.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\dashboard.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1679,7 +1679,7 @@
     },
     {
       "Route": "dashboard.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\dashboard.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\dashboard.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1716,7 +1716,7 @@
     },
     {
       "Route": "index.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\index.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1753,7 +1753,7 @@
     },
     {
       "Route": "index.oyx5g6dbb0.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\index.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1798,7 +1798,7 @@
     },
     {
       "Route": "js/login.fdipxo7umt.js",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\js\\login.js",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\js\\login.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1843,7 +1843,7 @@
     },
     {
       "Route": "js/login.js",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\js\\login.js",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\js\\login.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1880,7 +1880,7 @@
     },
     {
       "Route": "js/main.icsmabzbw0.js",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\js\\main.js",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\js\\main.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1925,7 +1925,7 @@
     },
     {
       "Route": "js/main.js",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\js\\main.js",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\js\\main.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1962,7 +1962,7 @@
     },
     {
       "Route": "js/register.fhbk3uh0af.js",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\js\\register.js",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\js\\register.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2007,7 +2007,7 @@
     },
     {
       "Route": "js/register.js",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\js\\register.js",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\js\\register.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2044,7 +2044,7 @@
     },
     {
       "Route": "lessons/python/exam.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\exam.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\exam.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2081,7 +2081,7 @@
     },
     {
       "Route": "lessons/python/exam.p5gv2f9252.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\exam.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\exam.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2126,7 +2126,7 @@
     },
     {
       "Route": "lessons/python/lesson1.393sxlhpcg.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson1.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson1.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2171,7 +2171,7 @@
     },
     {
       "Route": "lessons/python/lesson1.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson1.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson1.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2208,7 +2208,7 @@
     },
     {
       "Route": "lessons/python/lesson10.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson10.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson10.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2245,7 +2245,7 @@
     },
     {
       "Route": "lessons/python/lesson10.izvfqsf1vh.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson10.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson10.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2290,7 +2290,7 @@
     },
     {
       "Route": "lessons/python/lesson2.go43ql1csz.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson2.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson2.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2335,7 +2335,7 @@
     },
     {
       "Route": "lessons/python/lesson2.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson2.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson2.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2372,7 +2372,7 @@
     },
     {
       "Route": "lessons/python/lesson3.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson3.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson3.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2409,7 +2409,7 @@
     },
     {
       "Route": "lessons/python/lesson3.ntimmrdp50.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson3.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson3.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2454,7 +2454,7 @@
     },
     {
       "Route": "lessons/python/lesson4.4t1resfm9h.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson4.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson4.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2499,7 +2499,7 @@
     },
     {
       "Route": "lessons/python/lesson4.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson4.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson4.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2536,7 +2536,7 @@
     },
     {
       "Route": "lessons/python/lesson5.8jd6sc6aww.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson5.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson5.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2581,7 +2581,7 @@
     },
     {
       "Route": "lessons/python/lesson5.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson5.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson5.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2618,7 +2618,7 @@
     },
     {
       "Route": "lessons/python/lesson6.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson6.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson6.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2655,7 +2655,7 @@
     },
     {
       "Route": "lessons/python/lesson6.hyt231cwsk.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson6.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson6.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2700,7 +2700,7 @@
     },
     {
       "Route": "lessons/python/lesson7.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson7.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson7.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2737,7 +2737,7 @@
     },
     {
       "Route": "lessons/python/lesson7.r0ay933yrs.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson7.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson7.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2782,7 +2782,7 @@
     },
     {
       "Route": "lessons/python/lesson8.6bv9m7ct4w.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson8.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson8.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2827,7 +2827,7 @@
     },
     {
       "Route": "lessons/python/lesson8.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson8.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson8.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2864,7 +2864,7 @@
     },
     {
       "Route": "lessons/python/lesson9.5flhkzi25y.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson9.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson9.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2909,7 +2909,7 @@
     },
     {
       "Route": "lessons/python/lesson9.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\lessons\\python\\lesson9.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson9.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2946,7 +2946,7 @@
     },
     {
       "Route": "login.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\login.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\login.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2983,7 +2983,7 @@
     },
     {
       "Route": "login.we5p904du8.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\login.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\login.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3028,7 +3028,7 @@
     },
     {
       "Route": "register.2bjjwh3yxx.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\register.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\register.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3073,7 +3073,7 @@
     },
     {
       "Route": "register.html",
-      "AssetFile": "C:\\MyProjects\\CsLastTry\\CsLastTry\\App1\\wwwroot\\register.html",
+      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\register.html",
       "Selectors": [],
       "ResponseHeaders": [
         {

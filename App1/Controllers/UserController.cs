@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
+using App1.Models; // Добавьте эту строку
+using App1.Data;   // Добавьте эту строку
 
 [ApiController]
 [Route("api/[controller]")]

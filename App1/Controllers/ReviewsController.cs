@@ -1,9 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.EntityFrameworkCore;
 using App1.Models;
 using App1.Services;
-using System.Security.Claims;
 using App1.Data;
+using System.Security.Claims;
 
 namespace App1.Controllers
 {

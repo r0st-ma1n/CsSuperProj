@@ -2,6 +2,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using App1.Data; // Добавьте эту директиву
+using App1.Services; // Добавьте эту директиву
+using App1.Models; // Добавьте эту директиву
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-// Регистрация сервиса отзывов
+
+// Регистрация сервисов
 builder.Services.AddScoped<ReviewService>();
 
 // Add CORS
@@ -240,8 +244,20 @@ using (var scope = app.Services.CreateScope())
                 CreatedAt = DateTime.UtcNow,
                 Lessons = new List<Lesson>
                 {
-                    new Lesson { Title = "Introduction to Python", Content = "Python basics...", OrderNumber = 1, Duration = "1 hour" },
-                    new Lesson { Title = "Data Types", Content = "Strings, numbers, lists...", OrderNumber = 2, Duration = "1.5 hours" }
+                    new Lesson { 
+                        Title = "Introduction to Python", 
+                        Content = "Python basics...", 
+                        OrderNumber = 1, 
+                        Duration = "1 hour",
+                        CourseId = 1 // Добавьте это свойство
+                    },
+                    new Lesson { 
+                        Title = "Data Types", 
+                        Content = "Strings, numbers, lists...", 
+                        OrderNumber = 2, 
+                        Duration = "1.5 hours",
+                        CourseId = 1 // Добавьте это свойство
+                    }
                 }
             }
         };

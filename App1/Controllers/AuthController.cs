@@ -5,6 +5,8 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using App1.Models; // Добавьте эту строку
+using App1.Data;   // Добавьте эту строку
 
 [ApiController]
 [Route("api/[controller]")]
