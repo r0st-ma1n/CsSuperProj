@@ -16,14 +16,15 @@
                 <a href="/" style="color: white; text-decoration: none;">CodeBasics</a>
             </div>
             <ul class="nav-links">
-                <li><a href="/courses">Курсы</a></li>
+                <li><a href="/courses" style="color: #f39c12;">Курсы</a></li>
                 <li><a href="/about">О проекте</a></li>
                 <div class="auth-buttons">
                     <li><a href="/session/new" class="btn-outline">Войти</a></li>
                     <li><a href="/users/new" class="btn">Регистрация</a></li>
                     <!-- Добавляем блок для авторизованного пользователя -->
                     <li id="userInfo" style="display: none;">
-                        <span id="userName" style="margin-right: 10px; color: white;"></span>
+                        <a href="/dashboard" id="userName"
+                            style="margin-right: 10px; color: white; text-decoration: none; cursor: pointer; padding: 8px 12px; border-radius: 4px; transition: background 0.3s ease;"></a>
                         <button onclick="logout()" class="btn-outline"
                             style="background: transparent; border: 1px solid white; color: white; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Выйти</button>
                     </li>

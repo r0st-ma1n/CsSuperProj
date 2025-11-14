@@ -24,8 +24,10 @@
                     <li><a href="/users/new" class="btn">Регистрация</a></li>
                     <!-- Добавляем блок для авторизованного пользователя -->
                     <li id="userInfo" style="display: none;">
-                        <span id="userName" style="margin-right: 10px; color: white;"></span>
-                        <button onclick="logout()" class="btn-outline" style="background: transparent; border: 1px solid white; color: white; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Выйти</button>
+                        <a href="/dashboard" id="userName"
+                            style="margin-right: 10px; color: white; text-decoration: none; cursor: pointer; padding: 8px 12px; border-radius: 4px; transition: background 0.3s ease;"></a>
+                        <button onclick="logout()" class="btn-outline"
+                            style="background: transparent; border: 1px solid white; color: white; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Выйти</button>
                     </li>
                 </div>
             </ul>
