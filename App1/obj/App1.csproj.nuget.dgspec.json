@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\MyProjects\\CsSupreProj\\App1\\App1.csproj": {}
+    "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\App1.csproj": {}
   },
   "projects": {
-    "C:\\MyProjects\\CsSupreProj\\App1\\App1.csproj": {
+    "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\App1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MyProjects\\CsSupreProj\\App1\\App1.csproj",
+        "projectUniqueName": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\App1.csproj",
         "projectName": "App1",
-        "projectPath": "C:\\MyProjects\\CsSupreProj\\App1\\App1.csproj",
-        "packagesPath": "C:\\Users\\rasta\\.nuget\\packages\\",
-        "outputPath": "C:\\MyProjects\\CsSupreProj\\App1\\obj\\",
+        "projectPath": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\App1.csproj",
+        "packagesPath": "C:\\Users\\parsh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\rasta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\parsh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

@@ -342,37 +342,33 @@ body {
         flex-direction: column;
         gap: 1rem;
     }
-
     .nav-links {
         flex-direction: column;
         gap: 1rem;
     }
-
     .auth-buttons {
         flex-direction: column;
         width: 100%;
     }
-
     .btn-outline {
         text-align: center;
     }
-
     .lesson-hero-content {
         flex-direction: column;
         gap: 1rem;
         text-align: center;
     }
-
     .lesson-content {
         grid-template-columns: 1fr;
     }
-
     .navigation-buttons {
         justify-content: center;
     }
 }
 
+
 /* Стили для системы комментариев и оценок */
+
 .comments-section {
     background: white;
     border-radius: 15px;
@@ -528,7 +524,9 @@ body {
     font-weight: bold;
 }
 
+
 /* Стили для тестовых заданий */
+
 .test-task {
     background: white;
     border-radius: 15px;
@@ -750,4 +748,77 @@ body {
 .badge-test {
     background: #9b59b6;
     color: white;
+}
+
+.rating-stats {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.average-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.rating-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f39c12;
+}
+
+.rating-stats .stars {
+    display: flex;
+    gap: 2px;
+}
+
+.rating-count {
+    color: #6c757d;
+}
+
+.no-reviews {
+    text-align: center;
+    color: #6c757d;
+    font-style: italic;
+    padding: 2rem;
+}
+
+.comment-item {
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: white;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.comment-author {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.comment-date {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.comment-text {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.comment-rating {
+    color: #f39c12;
+    font-size: 0.9rem;
 }

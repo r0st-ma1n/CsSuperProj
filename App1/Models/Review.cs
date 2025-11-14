@@ -15,11 +15,15 @@ namespace App1.Models
         [Required]
         public int CourseId { get; set; }
 
+        // Добавьте это свойство, если отзывы могут быть к конкретному уроку
+        public int? LessonId { get; set; }
+
         [Required]
         [Range(1, 5)]
         public int Rating { get; set; }
 
         [Required]
+        [MinLength(10)]
         public string Content { get; set; } = string.Empty;
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
@@ -31,6 +35,9 @@ namespace App1.Models
 
         [ForeignKey("CourseId")]
         public virtual Course Course { get; set; } = null!;
+
+        [ForeignKey("LessonId")]
+        public virtual Lesson? Lesson { get; set; }
     }
 
     public class CreateReviewRequest
@@ -42,6 +49,8 @@ namespace App1.Models
         [Required]
         [MinLength(10)]
         public string Content { get; set; } = string.Empty;
+
+        public int? LessonId { get; set; } // Добавьте это
     }
 
     public class ReviewResponse
@@ -52,5 +61,6 @@ namespace App1.Models
         public DateTime CreatedAt { get; set; }
         public string UserName { get; set; } = string.Empty;
         public string UserFullName { get; set; } = string.Empty;
+        public int? LessonId { get; set; } // Добавьте это
     }
 }

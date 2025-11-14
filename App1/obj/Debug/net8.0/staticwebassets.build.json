@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kaiztFzV4gL9TgcqGWc+oo3+0oakhjkpEWDC9f+lzss=",
+  "Hash": "mtWOUcfWLLrm84hUazOFfOTxbtUcb5+DQ/syfzSffZ8=",
   "Source": "App1",
   "BasePath": "_content/App1",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "App1\\wwwroot",
       "Source": "App1",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\about.html",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\about.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "about#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -38,10 +38,10 @@
       "OriginalItemSpec": "wwwroot\\about.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\course-asyncio.html",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\course-asyncio.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "course-asyncio#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -59,10 +59,10 @@
       "OriginalItemSpec": "wwwroot\\course-asyncio.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\course-ml.html",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\course-ml.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "course-ml#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\course-ml.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\course-python.html",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\course-python.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "course-python#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\course-python.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\courses.html",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\courses.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "courses#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\courses.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\about.css",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\css\\about.css",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "css/about#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\css\\about.css"
     },
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\course-detail.css",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\css\\course-detail.css",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "css/course-detail#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -164,10 +164,10 @@
       "OriginalItemSpec": "wwwroot\\css\\course-detail.css"
     },
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\courses.css",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\css\\courses.css",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "css/courses#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -185,10 +185,10 @@
       "OriginalItemSpec": "wwwroot\\css\\courses.css"
     },
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\lesson.css",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\css\\lesson.css",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "css/lesson#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -199,17 +199,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "de2ba7p7dv",
-      "Integrity": "GwnYgMqBQPj8Mz2t2HZtO1mwjQ4dcVYTeCs/RCcvjNs=",
+      "Fingerprint": "b7cm9161yy",
+      "Integrity": "uStcd6y7tpzqCubXy6gL4SbCt7dSTpNDzGZ0S3siHMo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\lesson.css"
     },
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\login.css",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\css\\login.css",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "css/login#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -227,10 +227,10 @@
       "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\register.css",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\css\\register.css",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "css/register#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -248,10 +248,10 @@
       "OriginalItemSpec": "wwwroot\\css\\register.css"
     },
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\style.css",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\css\\style.css",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "css/style#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -269,10 +269,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\dashboard.html",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\dashboard.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "dashboard#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -290,10 +290,10 @@
       "OriginalItemSpec": "wwwroot\\dashboard.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\index.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "index#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -311,10 +311,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\js\\login.js",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\js\\login.js",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "js/login#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -332,10 +332,10 @@
       "OriginalItemSpec": "wwwroot\\js\\login.js"
     },
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\js\\main.js",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\js\\main.js",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "js/main#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -353,10 +353,10 @@
       "OriginalItemSpec": "wwwroot\\js\\main.js"
     },
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\js\\register.js",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\js\\register.js",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "js/register#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\js\\register.js"
     },
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\exam.html",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\exam.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "lessons/python/exam#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -395,10 +395,10 @@
       "OriginalItemSpec": "wwwroot\\lessons\\python\\exam.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson1.html",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson1.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "lessons/python/lesson1#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -409,17 +409,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "393sxlhpcg",
-      "Integrity": "d4RRksHs2jYGpodNBQLh85gEamzCqDwTlu0EF/uRg7Y=",
+      "Fingerprint": "1l7zowg72a",
+      "Integrity": "25Z8ZnL0zLWWsNf/okBpNhiVs/cfyiGrq34I0yjBaGM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lessons\\python\\lesson1.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson10.html",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson10.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "lessons/python/lesson10#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -437,10 +437,10 @@
       "OriginalItemSpec": "wwwroot\\lessons\\python\\lesson10.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson2.html",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson2.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "lessons/python/lesson2#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -458,10 +458,10 @@
       "OriginalItemSpec": "wwwroot\\lessons\\python\\lesson2.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson3.html",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson3.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "lessons/python/lesson3#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -479,10 +479,10 @@
       "OriginalItemSpec": "wwwroot\\lessons\\python\\lesson3.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson4.html",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson4.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "lessons/python/lesson4#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -500,10 +500,10 @@
       "OriginalItemSpec": "wwwroot\\lessons\\python\\lesson4.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson5.html",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson5.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "lessons/python/lesson5#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -521,10 +521,10 @@
       "OriginalItemSpec": "wwwroot\\lessons\\python\\lesson5.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson6.html",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson6.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "lessons/python/lesson6#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -542,10 +542,10 @@
       "OriginalItemSpec": "wwwroot\\lessons\\python\\lesson6.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson7.html",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson7.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "lessons/python/lesson7#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -563,10 +563,10 @@
       "OriginalItemSpec": "wwwroot\\lessons\\python\\lesson7.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson8.html",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson8.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "lessons/python/lesson8#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -584,10 +584,10 @@
       "OriginalItemSpec": "wwwroot\\lessons\\python\\lesson8.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson9.html",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson9.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "lessons/python/lesson9#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -605,10 +605,10 @@
       "OriginalItemSpec": "wwwroot\\lessons\\python\\lesson9.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\login.html",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\login.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "login#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -626,10 +626,10 @@
       "OriginalItemSpec": "wwwroot\\login.html"
     },
     {
-      "Identity": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\register.html",
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\register.html",
       "SourceId": "App1",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
       "BasePath": "_content/App1",
       "RelativePath": "register#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -650,7 +650,7 @@
   "Endpoints": [
     {
       "Route": "about.8998qmfxsb.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\about.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\about.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -671,7 +671,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -695,7 +695,7 @@
     },
     {
       "Route": "about.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\about.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\about.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -716,7 +716,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -732,7 +732,7 @@
     },
     {
       "Route": "course-asyncio.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\course-asyncio.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\course-asyncio.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -753,7 +753,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -769,7 +769,7 @@
     },
     {
       "Route": "course-asyncio.hwqxlidwky.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\course-asyncio.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\course-asyncio.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -790,7 +790,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -814,7 +814,7 @@
     },
     {
       "Route": "course-ml.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\course-ml.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\course-ml.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -835,7 +835,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -851,7 +851,7 @@
     },
     {
       "Route": "course-ml.w8bhsi1d4p.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\course-ml.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\course-ml.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -872,7 +872,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -896,7 +896,7 @@
     },
     {
       "Route": "course-python.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\course-python.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\course-python.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -917,7 +917,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -933,7 +933,7 @@
     },
     {
       "Route": "course-python.u8h9ginj0j.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\course-python.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\course-python.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -954,7 +954,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -978,7 +978,7 @@
     },
     {
       "Route": "courses.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\courses.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\courses.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -999,7 +999,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1015,7 +1015,7 @@
     },
     {
       "Route": "courses.ie94o154dp.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\courses.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\courses.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1036,7 +1036,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1060,7 +1060,7 @@
     },
     {
       "Route": "css/about.css",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\about.css",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\css\\about.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1081,7 +1081,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1097,7 +1097,7 @@
     },
     {
       "Route": "css/about.y3ve48gc59.css",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\about.css",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\css\\about.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1118,7 +1118,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1142,7 +1142,7 @@
     },
     {
       "Route": "css/course-detail.bp3fi0ar0z.css",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\course-detail.css",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\css\\course-detail.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1163,7 +1163,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1187,7 +1187,7 @@
     },
     {
       "Route": "css/course-detail.css",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\course-detail.css",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\css\\course-detail.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1208,7 +1208,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1224,7 +1224,7 @@
     },
     {
       "Route": "css/courses.css",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\courses.css",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\css\\courses.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1245,7 +1245,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1261,7 +1261,7 @@
     },
     {
       "Route": "css/courses.rkg0hyjkd2.css",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\courses.css",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\css\\courses.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1282,7 +1282,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1305,8 +1305,8 @@
       ]
     },
     {
-      "Route": "css/lesson.css",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\lesson.css",
+      "Route": "css/lesson.b7cm9161yy.css",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\css\\lesson.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1315,7 +1315,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12795"
+          "Value": "13936"
         },
         {
           "Name": "Content-Type",
@@ -1323,48 +1323,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"GwnYgMqBQPj8Mz2t2HZtO1mwjQ4dcVYTeCs/RCcvjNs=\""
+          "Value": "\"uStcd6y7tpzqCubXy6gL4SbCt7dSTpNDzGZ0S3siHMo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-GwnYgMqBQPj8Mz2t2HZtO1mwjQ4dcVYTeCs/RCcvjNs="
-        }
-      ]
-    },
-    {
-      "Route": "css/lesson.de2ba7p7dv.css",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\lesson.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "12795"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"GwnYgMqBQPj8Mz2t2HZtO1mwjQ4dcVYTeCs/RCcvjNs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Fri, 14 Nov 2025 00:46:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1374,7 +1337,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "de2ba7p7dv"
+          "Value": "b7cm9161yy"
         },
         {
           "Name": "label",
@@ -1382,13 +1345,50 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-GwnYgMqBQPj8Mz2t2HZtO1mwjQ4dcVYTeCs/RCcvjNs="
+          "Value": "sha256-uStcd6y7tpzqCubXy6gL4SbCt7dSTpNDzGZ0S3siHMo="
+        }
+      ]
+    },
+    {
+      "Route": "css/lesson.css",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\css\\lesson.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13936"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uStcd6y7tpzqCubXy6gL4SbCt7dSTpNDzGZ0S3siHMo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Nov 2025 00:46:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uStcd6y7tpzqCubXy6gL4SbCt7dSTpNDzGZ0S3siHMo="
         }
       ]
     },
     {
       "Route": "css/login.72pyk5hwrv.css",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\login.css",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\css\\login.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1409,7 +1409,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1433,7 +1433,7 @@
     },
     {
       "Route": "css/login.css",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\login.css",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\css\\login.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1454,7 +1454,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1470,7 +1470,7 @@
     },
     {
       "Route": "css/register.1b3tqi9ubi.css",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\register.css",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\css\\register.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1491,7 +1491,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1515,7 +1515,7 @@
     },
     {
       "Route": "css/register.css",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\register.css",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\css\\register.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1536,7 +1536,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1552,7 +1552,7 @@
     },
     {
       "Route": "css/style.css",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\style.css",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\css\\style.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1573,7 +1573,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1589,7 +1589,7 @@
     },
     {
       "Route": "css/style.dze9p0yuu4.css",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\css\\style.css",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\css\\style.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1610,7 +1610,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1634,7 +1634,7 @@
     },
     {
       "Route": "dashboard.058o7d93tj.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\dashboard.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\dashboard.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1655,7 +1655,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 10:01:22 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1679,7 +1679,7 @@
     },
     {
       "Route": "dashboard.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\dashboard.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\dashboard.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1700,7 +1700,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 10:01:22 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1716,7 +1716,7 @@
     },
     {
       "Route": "index.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\index.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1737,7 +1737,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1753,7 +1753,7 @@
     },
     {
       "Route": "index.oyx5g6dbb0.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\index.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1774,7 +1774,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1798,7 +1798,7 @@
     },
     {
       "Route": "js/login.fdipxo7umt.js",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\js\\login.js",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\js\\login.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1819,7 +1819,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1843,7 +1843,7 @@
     },
     {
       "Route": "js/login.js",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\js\\login.js",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\js\\login.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1864,7 +1864,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1880,7 +1880,7 @@
     },
     {
       "Route": "js/main.icsmabzbw0.js",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\js\\main.js",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\js\\main.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1901,7 +1901,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1925,7 +1925,7 @@
     },
     {
       "Route": "js/main.js",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\js\\main.js",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\js\\main.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1946,7 +1946,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1962,7 +1962,7 @@
     },
     {
       "Route": "js/register.fhbk3uh0af.js",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\js\\register.js",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\js\\register.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1983,7 +1983,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2007,7 +2007,7 @@
     },
     {
       "Route": "js/register.js",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\js\\register.js",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\js\\register.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2028,7 +2028,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2044,7 +2044,7 @@
     },
     {
       "Route": "lessons/python/exam.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\exam.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\exam.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2065,7 +2065,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2081,7 +2081,7 @@
     },
     {
       "Route": "lessons/python/exam.p5gv2f9252.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\exam.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\exam.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2102,7 +2102,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2125,8 +2125,8 @@
       ]
     },
     {
-      "Route": "lessons/python/lesson1.393sxlhpcg.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson1.html",
+      "Route": "lessons/python/lesson1.1l7zowg72a.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson1.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2135,7 +2135,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "29795"
+          "Value": "37147"
         },
         {
           "Name": "Content-Type",
@@ -2143,11 +2143,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"d4RRksHs2jYGpodNBQLh85gEamzCqDwTlu0EF/uRg7Y=\""
+          "Value": "\"25Z8ZnL0zLWWsNf/okBpNhiVs/cfyiGrq34I0yjBaGM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Fri, 14 Nov 2025 00:54:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2157,7 +2157,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "393sxlhpcg"
+          "Value": "1l7zowg72a"
         },
         {
           "Name": "label",
@@ -2165,13 +2165,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-d4RRksHs2jYGpodNBQLh85gEamzCqDwTlu0EF/uRg7Y="
+          "Value": "sha256-25Z8ZnL0zLWWsNf/okBpNhiVs/cfyiGrq34I0yjBaGM="
         }
       ]
     },
     {
       "Route": "lessons/python/lesson1.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson1.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson1.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2180,7 +2180,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "29795"
+          "Value": "37147"
         },
         {
           "Name": "Content-Type",
@@ -2188,11 +2188,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"d4RRksHs2jYGpodNBQLh85gEamzCqDwTlu0EF/uRg7Y=\""
+          "Value": "\"25Z8ZnL0zLWWsNf/okBpNhiVs/cfyiGrq34I0yjBaGM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Fri, 14 Nov 2025 00:54:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2202,13 +2202,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-d4RRksHs2jYGpodNBQLh85gEamzCqDwTlu0EF/uRg7Y="
+          "Value": "sha256-25Z8ZnL0zLWWsNf/okBpNhiVs/cfyiGrq34I0yjBaGM="
         }
       ]
     },
     {
       "Route": "lessons/python/lesson10.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson10.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson10.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2229,7 +2229,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2245,7 +2245,7 @@
     },
     {
       "Route": "lessons/python/lesson10.izvfqsf1vh.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson10.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson10.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2266,7 +2266,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2290,7 +2290,7 @@
     },
     {
       "Route": "lessons/python/lesson2.go43ql1csz.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson2.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson2.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2311,7 +2311,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2335,7 +2335,7 @@
     },
     {
       "Route": "lessons/python/lesson2.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson2.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson2.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2356,7 +2356,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2372,7 +2372,7 @@
     },
     {
       "Route": "lessons/python/lesson3.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson3.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson3.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2393,7 +2393,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2409,7 +2409,7 @@
     },
     {
       "Route": "lessons/python/lesson3.ntimmrdp50.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson3.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson3.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2430,7 +2430,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2454,7 +2454,7 @@
     },
     {
       "Route": "lessons/python/lesson4.4t1resfm9h.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson4.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson4.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2475,7 +2475,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2499,7 +2499,7 @@
     },
     {
       "Route": "lessons/python/lesson4.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson4.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson4.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2520,7 +2520,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2536,7 +2536,7 @@
     },
     {
       "Route": "lessons/python/lesson5.8jd6sc6aww.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson5.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson5.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2557,7 +2557,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2581,7 +2581,7 @@
     },
     {
       "Route": "lessons/python/lesson5.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson5.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson5.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2602,7 +2602,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2618,7 +2618,7 @@
     },
     {
       "Route": "lessons/python/lesson6.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson6.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson6.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2639,7 +2639,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2655,7 +2655,7 @@
     },
     {
       "Route": "lessons/python/lesson6.hyt231cwsk.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson6.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson6.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2676,7 +2676,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2700,7 +2700,7 @@
     },
     {
       "Route": "lessons/python/lesson7.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson7.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson7.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2721,7 +2721,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2737,7 +2737,7 @@
     },
     {
       "Route": "lessons/python/lesson7.r0ay933yrs.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson7.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson7.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2758,7 +2758,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2782,7 +2782,7 @@
     },
     {
       "Route": "lessons/python/lesson8.6bv9m7ct4w.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson8.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson8.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2803,7 +2803,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2827,7 +2827,7 @@
     },
     {
       "Route": "lessons/python/lesson8.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson8.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson8.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2848,7 +2848,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2864,7 +2864,7 @@
     },
     {
       "Route": "lessons/python/lesson9.5flhkzi25y.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson9.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson9.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2885,7 +2885,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2909,7 +2909,7 @@
     },
     {
       "Route": "lessons/python/lesson9.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\lessons\\python\\lesson9.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson9.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2930,7 +2930,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:10:47 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2946,7 +2946,7 @@
     },
     {
       "Route": "login.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\login.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\login.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2967,7 +2967,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 10:03:16 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2983,7 +2983,7 @@
     },
     {
       "Route": "login.we5p904du8.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\login.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\login.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3004,7 +3004,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 10:03:16 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3028,7 +3028,7 @@
     },
     {
       "Route": "register.2bjjwh3yxx.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\register.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\register.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3049,7 +3049,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:55:51 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3073,7 +3073,7 @@
     },
     {
       "Route": "register.html",
-      "AssetFile": "C:\\MyProjects\\CsSupreProj\\App1\\wwwroot\\register.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\register.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3094,7 +3094,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Nov 2025 09:55:51 GMT"
+          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
         },
         {
           "Name": "Cache-Control",

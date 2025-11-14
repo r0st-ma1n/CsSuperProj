@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using App1.Models;
 using App1.Data;
+using App1.Models;
 
 namespace App1.Services
 {
@@ -13,12 +13,19 @@ namespace App1.Services
             _context = context;
         }
 
-        // Получить все отзывы для курса
-        public async Task<List<ReviewResponse>> GetReviewsByCourseIdAsync(int courseId)
+        public async Task<List<ReviewResponse>> GetReviewsByCourseIdAsync(int courseId, int? lessonId = null)
         {
-            var reviews = await _context.Reviews
-                .Where(r => r.CourseId == courseId)
+            var query = _context.Reviews
                 .Include(r => r.User)
+                .Where(r => r.CourseId == courseId);
+
+            // Если указан lessonId, фильтруем по уроку
+            if (lessonId.HasValue)
+            {
+                query = query.Where(r => r.LessonId == lessonId);
+            }
+
+            return await query
                 .OrderByDescending(r => r.CreatedAt)
                 .Select(r => new ReviewResponse
                 {
@@ -27,29 +34,30 @@ namespace App1.Services
                     Content = r.Content,
                     CreatedAt = r.CreatedAt,
                     UserName = r.User.Email,
-                    UserFullName = $"{r.User.FirstName} {r.User.LastName}"
+                    UserFullName = $"{r.User.FirstName} {r.User.LastName}",
+                    LessonId = r.LessonId
                 })
                 .ToListAsync();
-
-            return reviews;
         }
 
-        // Создать новый отзыв
-        public async Task<Review> CreateReviewAsync(int userId, int courseId, CreateReviewRequest request)
+        public async Task CreateReviewAsync(int userId, int courseId, CreateReviewRequest request)
         {
-            // Проверяем, существует ли уже отзыв от этого пользователя для этого курса
+            // Проверяем, не оставлял ли пользователь уже отзыв для этого курса/урока
             var existingReview = await _context.Reviews
-                .FirstOrDefaultAsync(r => r.UserId == userId && r.CourseId == courseId);
+                .FirstOrDefaultAsync(r => r.UserId == userId &&
+                                         r.CourseId == courseId &&
+                                         r.LessonId == request.LessonId);
 
             if (existingReview != null)
             {
-                throw new Exception("Вы уже оставляли отзыв для этого курса");
+                throw new InvalidOperationException("Вы уже оставляли отзыв для этого урока");
             }
 
             var review = new Review
             {
                 UserId = userId,
                 CourseId = courseId,
+                LessonId = request.LessonId,
                 Rating = request.Rating,
                 Content = request.Content,
                 CreatedAt = DateTime.UtcNow
@@ -57,25 +65,30 @@ namespace App1.Services
 
             _context.Reviews.Add(review);
             await _context.SaveChangesAsync();
-
-            return review;
         }
 
-        // Получить средний рейтинг курса
-        public async Task<double> GetAverageRatingAsync(int courseId)
+        public async Task<double?> GetAverageRatingAsync(int courseId, int? lessonId = null)
         {
-            var average = await _context.Reviews
-                .Where(r => r.CourseId == courseId)
-                .AverageAsync(r => (double?)r.Rating) ?? 0.0;
+            var query = _context.Reviews.Where(r => r.CourseId == courseId);
 
-            return Math.Round(average, 1);
+            if (lessonId.HasValue)
+            {
+                query = query.Where(r => r.LessonId == lessonId);
+            }
+
+            return await query.AverageAsync(r => (double?)r.Rating);
         }
 
-        // Получить количество отзывов для курса
-        public async Task<int> GetReviewCountAsync(int courseId)
+        public async Task<int> GetReviewCountAsync(int courseId, int? lessonId = null)
         {
-            return await _context.Reviews
-                .CountAsync(r => r.CourseId == courseId);
+            var query = _context.Reviews.Where(r => r.CourseId == courseId);
+
+            if (lessonId.HasValue)
+            {
+                query = query.Where(r => r.LessonId == lessonId);
+            }
+
+            return await query.CountAsync();
         }
     }
 }

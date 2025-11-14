@@ -21,13 +21,15 @@ namespace App1.Controllers
             _context = context;
         }
 
-        // GET: api/reviews/course/5
+        // GET: api/reviews/course/5?lessonId=1
         [HttpGet("course/{courseId}")]
-        public async Task<ActionResult<List<ReviewResponse>>> GetCourseReviews(int courseId)
+        public async Task<ActionResult<List<ReviewResponse>>> GetCourseReviews(
+            int courseId,
+            [FromQuery] int? lessonId = null)
         {
             try
             {
-                var reviews = await _reviewService.GetReviewsByCourseIdAsync(courseId);
+                var reviews = await _reviewService.GetReviewsByCourseIdAsync(courseId, lessonId);
                 return Ok(reviews);
             }
             catch (Exception ex)
@@ -48,14 +50,12 @@ namespace App1.Controllers
 
             try
             {
-                // Получаем ID пользователя из токена
                 var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
                 if (userIdClaim == null || !int.TryParse(userIdClaim.Value, out int userId))
                 {
                     return Unauthorized(new { error = "Неверный токен авторизации" });
                 }
 
-                // Проверяем, существует ли курс
                 var courseExists = await _context.Courses.AnyAsync(c => c.Id == courseId);
                 if (!courseExists)
                 {
@@ -71,18 +71,20 @@ namespace App1.Controllers
             }
         }
 
-        // GET: api/reviews/course/5/stats
+        // GET: api/reviews/course/5/stats?lessonId=1
         [HttpGet("course/{courseId}/stats")]
-        public async Task<ActionResult> GetCourseStats(int courseId)
+        public async Task<ActionResult> GetCourseStats(
+            int courseId,
+            [FromQuery] int? lessonId = null)
         {
             try
             {
-                var averageRating = await _reviewService.GetAverageRatingAsync(courseId);
-                var reviewCount = await _reviewService.GetReviewCountAsync(courseId);
+                var averageRating = await _reviewService.GetAverageRatingAsync(courseId, lessonId);
+                var reviewCount = await _reviewService.GetReviewCountAsync(courseId, lessonId);
 
                 return Ok(new
                 {
-                    averageRating,
+                    averageRating = averageRating ?? 0,
                     reviewCount
                 });
             }

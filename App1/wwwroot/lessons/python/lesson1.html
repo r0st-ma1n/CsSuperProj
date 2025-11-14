@@ -44,8 +44,7 @@
             <div class="main-content">
                 <div class="video-section">
                     <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/videoseries?list=PLDyJYA6aTY1lPWXBPk0gw6gR8fEtPDGKa"
-                            title="Введение в Python" allowfullscreen>
+                        <iframe src="https://www.youtube.com/embed/videoseries?list=PLDyJYA6aTY1lPWXBPk0gw6gR8fEtPDGKa" title="Введение в Python" allowfullscreen>
                         </iframe>
                     </div>
                     <div class="video-description">
@@ -169,10 +168,7 @@
                                 <h4>Анализ кода</h4>
                                 <p>Что выведет следующий код?</p>
                                 <div class="option-code">
-                                    x = 5<br>
-                                    y = 2<br>
-                                    result = x * y + 3<br>
-                                    print(result)
+                                    x = 5<br> y = 2<br> result = x * y + 3<br> print(result)
                                 </div>
                             </div>
                             <div class="test-points">1 балл</div>
@@ -275,6 +271,21 @@
         <div class="comments-section">
             <h2>💬 Отзывы о тесте</h2>
 
+            <!-- Статистика отзывов -->
+            <div class="rating-stats" id="ratingStats">
+                <div class="average-rating">
+                    <span class="rating-value" id="averageRating">0.0</span>
+                    <div class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="rating-count" id="reviewCount">(0 отзывов)</span>
+                </div>
+            </div>
+
             <!-- Форма оценки -->
             <div class="rating-system">
                 <span class="rating-text">Оцените этот тест:</span>
@@ -290,38 +301,13 @@
 
             <!-- Форма комментария -->
             <div class="comment-form">
-                <textarea class="comment-input" placeholder="Оставьте ваш отзыв о тесте..."
-                    data-task="lesson" id="lessonCommentInput"></textarea>
-                <button class="comment-submit" onclick="addLessonComment()">Отправить отзыв</button>
+                <textarea class="comment-input" placeholder="Оставьте ваш отзыв о тесте..." data-task="lesson" id="lessonCommentInput"></textarea>
+                <button class="comment-submit" onclick="submitReview()">Отправить отзыв</button>
             </div>
 
             <!-- Список комментариев -->
             <div class="comments-list" id="commentsListLesson">
-                <div class="comment-item">
-                    <div class="comment-header">
-                        <span class="comment-author">Анна Петрова</span>
-                        <span class="comment-date">15.01.2024 14:30</span>
-                    </div>
-                    <div class="comment-text">
-                        Отличный тест! Вопросы охватывают все основные темы урока. Быстро и понятно.
-                    </div>
-                    <div class="comment-rating">
-                        ⭐⭐⭐⭐⭐ (5/5)
-                    </div>
-                </div>
-
-                <div class="comment-item">
-                    <div class="comment-header">
-                        <span class="comment-author">Иван Сидоров</span>
-                        <span class="comment-date">14.01.2024 09:15</span>
-                    </div>
-                    <div class="comment-text">
-                        Понравилась простота теста. Хорошо для проверки базовых знаний.
-                    </div>
-                    <div class="comment-rating">
-                        ⭐⭐⭐⭐ (4/5)
-                    </div>
-                </div>
+                <!-- Комментарии будут загружаться здесь -->
             </div>
         </div>
     </section>
@@ -331,8 +317,190 @@
     </footer>
 
     <script>
+        // ========== API INTEGRATION ==========
+
+        const API_BASE_URL = 'http://localhost:5086/api'; // Измените на ваш URL
+        const COURSE_ID = 1; // ID курса Python
+        const LESSON_ID = 1; // ID урока
+
+        // Загрузка отзывов при загрузке страницы
+        document.addEventListener('DOMContentLoaded', function() {
+            loadReviews();
+            loadRatingStats();
+
+            // Восстанавливаем оценки из localStorage
+            document.querySelectorAll('.rating-stars').forEach(starsContainer => {
+                const taskId = starsContainer.getAttribute('data-task');
+                const savedRating = getCurrentRating(taskId);
+                if (savedRating > 0) {
+                    const stars = starsContainer.querySelectorAll('.star');
+                    highlightStars(stars, savedRating);
+                    document.getElementById(`currentRating${taskId.charAt(0).toUpperCase() + taskId.slice(1)}`).textContent = `${savedRating}/5`;
+                }
+            });
+        });
+
+        // Загрузка отзывов
+        async function loadReviews() {
+            try {
+                const response = await fetch(`${API_BASE_URL}/reviews/course/${COURSE_ID}?lessonId=${LESSON_ID}`);
+                if (response.ok) {
+                    const reviews = await response.json();
+                    displayReviews(reviews);
+                } else {
+                    console.error('Ошибка загрузки отзывов:', response.status);
+                }
+            } catch (error) {
+                console.error('Ошибка загрузки отзывов:', error);
+            }
+        }
+
+        // Загрузка статистики оценок
+        async function loadRatingStats() {
+            try {
+                const response = await fetch(`${API_BASE_URL}/reviews/course/${COURSE_ID}/stats?lessonId=${LESSON_ID}`);
+                if (response.ok) {
+                    const stats = await response.json();
+                    displayRatingStats(stats);
+                } else {
+                    console.error('Ошибка загрузки статистики:', response.status);
+                }
+            } catch (error) {
+                console.error('Ошибка загрузки статистики:', error);
+            }
+        }
+
+        // Отображение отзывов
+        function displayReviews(reviews) {
+            const commentsList = document.getElementById('commentsListLesson');
+
+            if (reviews.length === 0) {
+                commentsList.innerHTML = '<p class="no-reviews">Пока нет отзывов. Будьте первым!</p>';
+                return;
+            }
+
+            commentsList.innerHTML = reviews.map(review => `
+        <div class="comment-item">
+            <div class="comment-header">
+                <span class="comment-author">${review.userFullName}</span>
+                <span class="comment-date">${formatDate(review.createdAt)}</span>
+            </div>
+            <div class="comment-text">${escapeHtml(review.content)}</div>
+            <div class="comment-rating">
+                ${'⭐'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)} (${review.rating}/5)
+            </div>
+        </div>
+    `).join('');
+        }
+
+        // Отображение статистики оценок
+        function displayRatingStats(stats) {
+            const averageRating = document.getElementById('averageRating');
+            const reviewCount = document.getElementById('reviewCount');
+            const ratingStats = document.getElementById('ratingStats');
+
+            averageRating.textContent = stats.averageRating.toFixed(1);
+            reviewCount.textContent = `(${stats.reviewCount} ${getReviewWord(stats.reviewCount)})`;
+
+            // Обновляем визуальное отображение среднего рейтинга
+            const stars = ratingStats.querySelectorAll('.star');
+            resetStars(stars);
+
+            const fullStars = Math.floor(stats.averageRating);
+            const hasHalfStar = stats.averageRating % 1 >= 0.5;
+
+            stars.forEach((star, index) => {
+                if (index < fullStars) {
+                    star.textContent = '★';
+                    star.classList.add('active');
+                } else if (index === fullStars && hasHalfStar) {
+                    star.textContent = '½';
+                    star.classList.add('active');
+                }
+            });
+        }
+
+        // Отправка отзыва
+        async function submitReview() {
+            const commentInput = document.getElementById('lessonCommentInput');
+            const commentText = commentInput.value.trim();
+            const userRating = getCurrentRating('lesson');
+
+            if (!commentText) {
+                alert('Пожалуйста, введите текст отзыва');
+                return;
+            }
+
+            if (userRating === 0) {
+                alert('Пожалуйста, поставьте оценку');
+                return;
+            }
+
+            if (commentText.length < 10) {
+                alert('Отзыв должен содержать минимум 10 символов');
+                return;
+            }
+
+            try {
+                const token = localStorage.getItem('authToken'); // Получаем токен из localStorage
+
+                const response = await fetch(`${API_BASE_URL}/reviews/course/${COURSE_ID}`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': token ? `Bearer ${token}` : ''
+                    },
+                    body: JSON.stringify({
+                        rating: userRating,
+                        content: commentText,
+                        lessonId: LESSON_ID
+                    })
+                });
+
+                if (response.ok) {
+                    const result = await response.json();
+                    alert('Отзыв успешно добавлен!');
+                    commentInput.value = '';
+                    resetStars(document.querySelectorAll('.rating-stars[data-task="lesson"] .star'));
+                    document.getElementById('currentRatingLesson').textContent = 'Не оценено';
+                    localStorage.removeItem('rating_lesson');
+
+                    // Перезагружаем отзывы и статистику
+                    loadReviews();
+                    loadRatingStats();
+                } else {
+                    const error = await response.json();
+                    alert(`Ошибка: ${error.error || 'Не удалось добавить отзыв'}`);
+                }
+            } catch (error) {
+                console.error('Ошибка отправки отзыва:', error);
+                alert('Ошибка сети. Попробуйте еще раз.');
+            }
+        }
+
+        // Вспомогательные функции
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            return date.toLocaleDateString('ru-RU') + ' ' + date.toLocaleTimeString('ru-RU', {
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function getReviewWord(count) {
+            if (count % 10 === 1 && count % 100 !== 11) return 'отзыв';
+            if (count % 10 >= 2 && count % 10 <= 4 && (count % 100 < 10 || count % 100 >= 20)) return 'отзыва';
+            return 'отзывов';
+        }
+
         // ========== ТЕСТОВЫЕ ЗАДАНИЯ ==========
-        
+
         let testResults = {
             total: 3,
             correct: 0,
@@ -447,7 +615,9 @@
                 document.getElementById('testResults').style.display = 'block';
 
                 // Прокрутка к результатам
-                document.getElementById('testResults').scrollIntoView({ behavior: 'smooth' });
+                document.getElementById('testResults').scrollIntoView({
+                    behavior: 'smooth'
+                });
             }
         }
 
@@ -468,16 +638,16 @@
         }
 
         // ========== СИСТЕМА КОММЕНТАРИЕВ И ОЦЕНОК ==========
-        
+
         // Система оценок
         document.querySelectorAll('.rating-stars .star').forEach(star => {
-            star.addEventListener('click', function () {
+            star.addEventListener('click', function() {
                 const rating = parseInt(this.getAttribute('data-value'));
                 const taskId = this.closest('.rating-stars').getAttribute('data-task');
                 setRating(taskId, rating);
             });
 
-            star.addEventListener('mouseover', function () {
+            star.addEventListener('mouseover', function() {
                 const rating = parseInt(this.getAttribute('data-value'));
                 const stars = this.closest('.rating-stars').querySelectorAll('.star');
                 highlightStars(stars, rating);
@@ -485,7 +655,7 @@
         });
 
         document.querySelectorAll('.rating-stars').forEach(starsContainer => {
-            starsContainer.addEventListener('mouseleave', function () {
+            starsContainer.addEventListener('mouseleave', function() {
                 const currentRating = getCurrentRating(this.getAttribute('data-task'));
                 const stars = this.querySelectorAll('.star');
                 if (currentRating > 0) {
@@ -513,18 +683,12 @@
             });
         }
 
+        // Обновите функцию setRating для сохранения в localStorage
         function setRating(taskId, rating) {
-            // Сохраняем оценку в localStorage
             localStorage.setItem(`rating_${taskId}`, rating);
-
-            // Обновляем отображение
             const stars = document.querySelector(`.rating-stars[data-task="${taskId}"]`).querySelectorAll('.star');
             highlightStars(stars, rating);
-
-            // Обновляем текст
             document.getElementById(`currentRating${taskId.charAt(0).toUpperCase() + taskId.slice(1)}`).textContent = `${rating}/5`;
-
-            alert(`Спасибо за оценку! Вы поставили ${rating} звезд.`);
         }
 
         function getCurrentRating(taskId) {
@@ -543,7 +707,10 @@
 
             const commentsList = document.getElementById('commentsListLesson');
             const now = new Date();
-            const dateString = now.toLocaleDateString('ru-RU') + ' ' + now.toLocaleTimeString('ru-RU', { hour: '2-digit', minute: '2-digit' });
+            const dateString = now.toLocaleDateString('ru-RU') + ' ' + now.toLocaleTimeString('ru-RU', {
+                hour: '2-digit',
+                minute: '2-digit'
+            });
 
             // Получаем текущий рейтинг пользователя
             const userRating = getCurrentRating('lesson');
@@ -571,7 +738,7 @@
         }
 
         // Инициализация при загрузке страницы
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             // Восстанавливаем оценки из localStorage
             document.querySelectorAll('.rating-stars').forEach(starsContainer => {
                 const taskId = starsContainer.getAttribute('data-task');
@@ -585,4 +752,5 @@
         });
     </script>
 </body>
+
 </html>

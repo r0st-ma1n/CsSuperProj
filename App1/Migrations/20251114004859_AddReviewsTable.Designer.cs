@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace App1.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20251113235946_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20251114004859_AddReviewsTable")]
+    partial class AddReviewsTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -149,6 +149,9 @@ namespace App1.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
 
+                    b.Property<int?>("LessonId")
+                        .HasColumnType("integer");
+
                     b.Property<int>("Rating")
                         .HasColumnType("integer");
 
@@ -161,6 +164,8 @@ namespace App1.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CourseId");
+
+                    b.HasIndex("LessonId");
 
                     b.HasIndex("UserId", "CourseId")
                         .IsUnique();
@@ -288,6 +293,10 @@ namespace App1.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("App1.Models.Lesson", "Lesson")
+                        .WithMany()
+                        .HasForeignKey("LessonId");
+
                     b.HasOne("App1.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
@@ -295,6 +304,8 @@ namespace App1.Migrations
                         .IsRequired();
 
                     b.Navigation("Course");
+
+                    b.Navigation("Lesson");
 
                     b.Navigation("User");
                 });
