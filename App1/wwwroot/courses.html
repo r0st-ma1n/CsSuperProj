@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Курсы - Code Basics</title>
     <link rel="stylesheet" href="/css/courses.css">
+    <!-- Подключаем style.css только для header -->
+    <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
     <header class="header">
-    <nav class="nav-container">
-        <div class="logo">
-            <a href="/" style="color: white; text-decoration: none;">CodeBasics</a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="/courses" style="color: #f39c12;">Курсы</a></li>
-            <li><a href="/about">О проекте</a></li>
-            <div class="auth-buttons">
-                <li><a href="/session/new" class="btn-outline">Войти</a></li>
-                <li><a href="/users/new" class="btn">Регистрация</a></li>
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="/" style="color: white; text-decoration: none;">CodeBasics</a>
             </div>
-        </ul>
-    </nav>
-</header>
+            <ul class="nav-links">
+                <li><a href="/courses" style="color: #f39c12;">Курсы</a></li>
+                <li><a href="/about">О проекте</a></li>
+                <div class="auth-buttons">
+                    <li><a href="/session/new" class="btn-outline">Войти</a></li>
+                    <li><a href="/users/new" class="btn">Регистрация</a></li>
+                    <!-- Добавляем блок для авторизованного пользователя -->
+                    <li id="userInfo" style="display: none;">
+                        <span id="userName" style="margin-right: 10px; color: white;"></span>
+                        <button onclick="logout()" class="btn-outline" style="background: transparent; border: 1px solid white; color: white; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Выйти</button>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
 
     <section class="hero">
         <div class="hero-content">
@@ -41,8 +50,7 @@
                 </div>
                 <div class="course-body">
                     <p class="course-description">
-                        Изучите основы программирования на одном из самых популярных языков. 
-                        От переменных до функций и ООП.
+                        Изучите основы программирования на одном из самых популярных языков. От переменных до функций и ООП.
                     </p>
                     <ul class="course-features">
                         <li>10 практических заданий</li>
@@ -63,8 +71,7 @@
                 </div>
                 <div class="course-body">
                     <p class="course-description">
-                        Погрузитесь в мир машинного обучения. Создавайте свои первые модели 
-                        и решайте реальные задачи.
+                        Погрузитесь в мир машинного обучения. Создавайте свои первые модели и решайте реальные задачи.
                     </p>
                     <ul class="course-features">
                         <li>10 практических проектов</li>
@@ -85,8 +92,7 @@
                 </div>
                 <div class="course-body">
                     <p class="course-description">
-                        Освойте асинхронное программирование в Python. Создавайте быстрые 
-                        и эффективные приложения.
+                        Освойте асинхронное программирование в Python. Создавайте быстрые и эффективные приложения.
                     </p>
                     <ul class="course-features">
                         <li>10 сложных заданий</li>
@@ -105,14 +111,90 @@
     </footer>
 
     <script>
-        // Добавляем анимацию появления карточек
+        // ========== СИСТЕМА АВТОРИЗАЦИИ ==========
+
+        function getToken() {
+            return localStorage.getItem('authToken') || localStorage.getItem('token');
+        }
+
+        function removeTokens() {
+            localStorage.removeItem('authToken');
+            localStorage.removeItem('token');
+        }
+
+        function showUserInfo(token) {
+            try {
+                // Пытаемся декодировать токен
+                const base64Url = token.split('.')[1];
+                const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+                const payload = JSON.parse(decodeURIComponent(atob(base64).split('').map(function(c) {
+                    return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+                }).join('')));
+
+                // Пробуем разные варианты получения имени
+                let userName = 'Пользователь';
+
+                if (payload.FirstName && payload.LastName) {
+                    userName = `${payload.FirstName} ${payload.LastName}`;
+                } else if (payload.name) {
+                    userName = payload.name;
+                } else if (payload.unique_name) {
+                    userName = payload.unique_name;
+                } else if (payload.email) {
+                    userName = payload.email.split('@')[0];
+                }
+
+                updateAuthUI(userName);
+            } catch (e) {
+                console.log('Ошибка декодирования токена:', e);
+                // Если не получается, просто показываем "Пользователь"
+                updateAuthUI('Пользователь');
+            }
+        }
+
+        function updateAuthUI(userName) {
+            const userInfo = document.getElementById('userInfo');
+            const authButtons = document.querySelector('.auth-buttons');
+
+            if (userInfo && authButtons) {
+                document.getElementById('userName').textContent = userName;
+                userInfo.style.display = 'flex';
+
+                // Скрываем кнопки входа/регистрации
+                const loginBtn = authButtons.querySelector('a[href="/session/new"]');
+                const registerBtn = authButtons.querySelector('a[href="/users/new"]');
+                if (loginBtn) loginBtn.parentElement.style.display = 'none';
+                if (registerBtn) registerBtn.parentElement.style.display = 'none';
+            }
+        }
+
+        function initializeAuth() {
+            const token = getToken();
+
+            if (token) {
+                console.log('Пользователь авторизован');
+                showUserInfo(token);
+            } else {
+                console.log('Пользователь не авторизован');
+            }
+        }
+
+        function logout() {
+            removeTokens();
+            location.reload();
+        }
+
+        // Инициализация авторизации
         document.addEventListener('DOMContentLoaded', function() {
+            initializeAuth();
+
+            // Анимация карточек (существующий код)
             const cards = document.querySelectorAll('.course-card');
             cards.forEach((card, index) => {
                 card.style.opacity = '0';
                 card.style.transform = 'translateY(30px)';
                 card.style.transition = 'all 0.6s ease';
-                
+
                 setTimeout(() => {
                     card.style.opacity = '1';
                     card.style.transform = 'translateY(0)';
@@ -121,4 +203,5 @@
         });
     </script>
 </body>
+
 </html>

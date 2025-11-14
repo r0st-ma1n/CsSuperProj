@@ -24,6 +24,11 @@ namespace App1.Services
             {
                 query = query.Where(r => r.LessonId == lessonId);
             }
+            else
+            {
+                // Если lessonId не указан, берем только отзывы на курс (где LessonId == null)
+                query = query.Where(r => r.LessonId == null);
+            }
 
             return await query
                 .OrderByDescending(r => r.CreatedAt)
@@ -42,22 +47,39 @@ namespace App1.Services
 
         public async Task CreateReviewAsync(int userId, int courseId, CreateReviewRequest request)
         {
-            // Проверяем, не оставлял ли пользователь уже отзыв для этого курса/урока
-            var existingReview = await _context.Reviews
-                .FirstOrDefaultAsync(r => r.UserId == userId &&
-                                         r.CourseId == courseId &&
-                                         r.LessonId == request.LessonId);
-
-            if (existingReview != null)
+            // Для отзывов на курс (без урока) проверяем только UserId и CourseId с LessonId == null
+            if (request.LessonId.HasValue)
             {
-                throw new InvalidOperationException("Вы уже оставляли отзыв для этого урока");
+                // Отзыв на конкретный урок
+                var existingLessonReview = await _context.Reviews
+                    .FirstOrDefaultAsync(r => r.UserId == userId &&
+                                             r.CourseId == courseId &&
+                                             r.LessonId == request.LessonId);
+
+                if (existingLessonReview != null)
+                {
+                    throw new InvalidOperationException("Вы уже оставляли отзыв для этого урока");
+                }
+            }
+            else
+            {
+                // Отзыв на весь курс (LessonId == null)
+                var existingCourseReview = await _context.Reviews
+                    .FirstOrDefaultAsync(r => r.UserId == userId &&
+                                             r.CourseId == courseId &&
+                                             r.LessonId == null);
+
+                if (existingCourseReview != null)
+                {
+                    throw new InvalidOperationException("Вы уже оставляли отзыв для этого курса");
+                }
             }
 
             var review = new Review
             {
                 UserId = userId,
                 CourseId = courseId,
-                LessonId = request.LessonId,
+                LessonId = request.LessonId, // Будет null для отзывов на курс
                 Rating = request.Rating,
                 Content = request.Content,
                 CreatedAt = DateTime.UtcNow
@@ -75,6 +97,11 @@ namespace App1.Services
             {
                 query = query.Where(r => r.LessonId == lessonId);
             }
+            else
+            {
+                // Для курса берем только отзывы с LessonId == null
+                query = query.Where(r => r.LessonId == null);
+            }
 
             return await query.AverageAsync(r => (double?)r.Rating);
         }
@@ -86,6 +113,11 @@ namespace App1.Services
             if (lessonId.HasValue)
             {
                 query = query.Where(r => r.LessonId == lessonId);
+            }
+            else
+            {
+                // Для курса берем только отзывы с LessonId == null
+                query = query.Where(r => r.LessonId == null);
             }
 
             return await query.CountAsync();

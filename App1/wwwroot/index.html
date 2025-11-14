@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Изучение Python - Code Basics</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
     <header class="header">
         <nav class="nav-container">
             <div class="logo">
-            <a href="/" style="color: white; text-decoration: none;">CodeBasics</a>
+                <a href="/" style="color: white; text-decoration: none;">CodeBasics</a>
             </div>
             <ul class="nav-links">
-                <li><a href="/courses">Курсы</a></li> 
+                <li><a href="/courses">Курсы</a></li>
                 <li><a href="/about">О проекте</a></li>
                 <div class="auth-buttons">
                     <li><a href="/session/new" class="btn-outline">Войти</a></li>
                     <li><a href="/users/new" class="btn">Регистрация</a></li>
+                    <!-- Добавляем блок для авторизованного пользователя -->
+                    <li id="userInfo" style="display: none;">
+                        <span id="userName" style="margin-right: 10px; color: white;"></span>
+                        <button onclick="logout()" class="btn-outline" style="background: transparent; border: 1px solid white; color: white; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Выйти</button>
+                    </li>
                 </div>
             </ul>
         </nav>
@@ -86,4 +93,5 @@
 
     <script src="/js/main.js"></script>
 </body>
+
 </html>

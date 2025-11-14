@@ -119,9 +119,9 @@ namespace App1.Data
             modelBuilder.Entity<Review>(entity =>
             {
                 entity.HasKey(r => r.Id);
-                
-                // Unique constraint
-                entity.HasIndex(r => new { r.UserId, r.CourseId }).IsUnique();
+
+                // Разрешить multiple reviews per course, но только один на урок
+                entity.HasIndex(r => new { r.UserId, r.CourseId, r.LessonId }).IsUnique();
 
                 // Relationships
                 entity.HasOne(r => r.User)
@@ -132,6 +132,12 @@ namespace App1.Data
                 entity.HasOne(r => r.Course)
                       .WithMany() // Course не имеет навигационного свойства к Review
                       .HasForeignKey(r => r.CourseId)
+                      .OnDelete(DeleteBehavior.Cascade);
+
+                // Дополнительная связь с Lesson (если нужно)
+                entity.HasOne(r => r.Lesson)
+                      .WithMany() // Lesson не имеет навигационного свойства к Review
+                      .HasForeignKey(r => r.LessonId)
                       .OnDelete(DeleteBehavior.Cascade);
             });
         }

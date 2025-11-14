@@ -57,6 +57,18 @@
       "PackagePath": "staticwebassets\\index.html"
     },
     {
+      "Id": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\js\\auth.js",
+      "PackagePath": "staticwebassets\\js\\auth.js"
+    },
+    {
+      "Id": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\js\\course-reviews.js",
+      "PackagePath": "staticwebassets\\js\\course-reviews.js"
+    },
+    {
+      "Id": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\js\\lesson-tests.js",
+      "PackagePath": "staticwebassets\\js\\lesson-tests.js"
+    },
+    {
       "Id": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\js\\login.js",
       "PackagePath": "staticwebassets\\js\\login.js"
     },
@@ -65,8 +77,20 @@
       "PackagePath": "staticwebassets\\js\\main.js"
     },
     {
+      "Id": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\js\\ml-course-reviews.js",
+      "PackagePath": "staticwebassets\\js\\ml-course-reviews.js"
+    },
+    {
+      "Id": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\js\\rating-stars.js",
+      "PackagePath": "staticwebassets\\js\\rating-stars.js"
+    },
+    {
       "Id": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\js\\register.js",
       "PackagePath": "staticwebassets\\js\\register.js"
+    },
+    {
+      "Id": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\js\\reviews.js",
+      "PackagePath": "staticwebassets\\js\\reviews.js"
     },
     {
       "Id": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\exam.html",

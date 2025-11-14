@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Основы ML-разработки - Code Basics</title>
     <link rel="stylesheet" href="/css/course-detail.css">
+    <!-- Подключаем style.css только для header -->
+    <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
     <header class="header">
-    <nav class="nav-container">
-        <div class="logo">
-            <a href="/" style="color: white; text-decoration: none;">CodeBasics</a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="/courses">Курсы</a></li>
-            <li><a href="/about">О проекте</a></li>
-            <div class="auth-buttons">
-                <li><a href="/session/new" class="btn-outline">Войти</a></li>
-                <li><a href="/users/new" class="btn">Регистрация</a></li>
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="/" style="color: white; text-decoration: none;">CodeBasics</a>
             </div>
-        </ul>
-    </nav>
-</header>
+            <ul class="nav-links">
+                <li><a href="/courses" style="color: #f39c12;">Курсы</a></li>
+                <li><a href="/about">О проекте</a></li>
+                <div class="auth-buttons">
+                    <li><a href="/session/new" class="btn-outline">Войти</a></li>
+                    <li><a href="/users/new" class="btn">Регистрация</a></li>
+                    <!-- Добавляем блок для авторизованного пользователя -->
+                    <li id="userInfo" style="display: none;">
+                        <span id="userName" style="margin-right: 10px; color: white;"></span>
+                        <button onclick="logout()" class="btn-outline"
+                            style="background: transparent; border: 1px solid white; color: white; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Выйти</button>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
 
     <section class="course-hero ml">
         <div class="course-hero-content">
             <div class="course-icon">🤖</div>
             <h1>Основы ML-разработки</h1>
             <p class="course-description">
-                Погрузитесь в мир машинного обучения. Изучите основные алгоритмы, 
+                Погрузитесь в мир машинного обучения. Изучите основные алгоритмы,
                 работу с данными и создание моделей через практические проекты.
             </p>
             <div class="progress-container">
@@ -47,7 +57,7 @@
         <div class="lessons-container">
             <div class="lessons-list">
                 <h2>Уроки курса</h2>
-                
+
                 <!-- Уроки 1-10 -->
                 <div class="lesson-item current">
                     <div class="lesson-number">1</div>
@@ -177,16 +187,66 @@
                 <a href="#" class="start-btn">Начать первый урок</a>
             </div>
         </div>
+
+        <!-- Секция отзывов о курсе -->
+        <section class="comments-section">
+            <h2>💬 Отзывы о курсе</h2>
+
+            <!-- Статистика отзывов -->
+            <div class="rating-stats" id="courseRatingStats">
+                <div class="average-rating">
+                    <span class="rating-value" id="courseAverageRating">0.0</span>
+                    <div class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="rating-count" id="courseReviewCount">(0 отзывов)</span>
+                </div>
+            </div>
+
+            <!-- Форма оценки -->
+            <div class="rating-system">
+                <span class="rating-text">Оцените этот курс:</span>
+                <div class="rating-stars" data-task="course">
+                    <span class="star" data-value="1">☆</span>
+                    <span class="star" data-value="2">☆</span>
+                    <span class="star" data-value="3">☆</span>
+                    <span class="star" data-value="4">☆</span>
+                    <span class="star" data-value="5">☆</span>
+                </div>
+                <span class="rating-text" id="currentRatingCourse">Не оценено</span>
+            </div>
+
+            <!-- Форма комментария -->
+            <div class="comment-form">
+                <textarea class="comment-input" placeholder="Оставьте ваш отзыв о курсе..."
+                    id="courseCommentInput"></textarea>
+                <button class="comment-submit" onclick="submitReviewForCourse()">Отправить отзыв</button>
+            </div>
+
+            <!-- Список комментариев -->
+            <div class="comments-list" id="commentsListCourse">
+                <!-- Комментарии будут загружаться здесь -->
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
         <p>&copy; 2024 CodeBasics. Все права защищены.</p>
     </footer>
 
+    <!-- Подключаем скрипты -->
+    <script src="/js/auth.js"></script>
+    <script src="/js/rating-stars.js"></script>
+    <script src="/js/course-reviews.js"></script>
+
     <script>
         // Обработчик кликов по урокам
         document.querySelectorAll('.lesson-item').forEach(item => {
-            item.addEventListener('click', function() {
+            item.addEventListener('click', function () {
                 if (this.classList.contains('exam-item')) {
                     alert('Экзамен будет доступен после завершения всех уроков');
                 } else {
@@ -198,19 +258,46 @@
         });
 
         // Анимация появления элементов
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const lessons = document.querySelectorAll('.lesson-item');
             lessons.forEach((lesson, index) => {
                 lesson.style.opacity = '0';
                 lesson.style.transform = 'translateX(-20px)';
                 lesson.style.transition = 'all 0.5s ease';
-                
+
                 setTimeout(() => {
                     lesson.style.opacity = '1';
                     lesson.style.transform = 'translateX(0)';
                 }, index * 100);
             });
+
+            // Инициализация системы отзывов для ML курса
+            initializeMLCourseReviews();
         });
+
+        // Функция для инициализации отзывов ML курса
+        function initializeMLCourseReviews() {
+            // Устанавливаем правильный ID курса для ML
+            window.COURSE_ID = 2; // ID для ML курса
+
+            // Загружаем отзывы и статистику
+            if (typeof loadCourseReviews === 'function') {
+                loadCourseReviews();
+            }
+            if (typeof loadCourseRatingStats === 'function') {
+                loadCourseRatingStats();
+            }
+        }
+
+        // Функция для отправки отзыва (будет использовать функции из course-reviews.js)
+        function submitReviewForCourse() {
+            if (typeof window.submitReviewForCourse === 'function') {
+                window.submitReviewForCourse();
+            } else {
+                alert('Система отзывов загружается...');
+            }
+        }
     </script>
 </body>
+
 </html>

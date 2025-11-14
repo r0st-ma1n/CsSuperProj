@@ -6,18 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Основы Python - Code Basics</title>
     <link rel="stylesheet" href="/css/course-detail.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
     <header class="header">
         <nav class="nav-container">
-            <div class="logo">CodeBasics</div>
+            <div class="logo">
+                <a href="/" style="color: white; text-decoration: none;">CodeBasics</a>
+            </div>
             <ul class="nav-links">
                 <li><a href="/courses">Курсы</a></li>
                 <li><a href="/about">О проекте</a></li>
                 <div class="auth-buttons">
                     <li><a href="/session/new" class="btn-outline">Войти</a></li>
                     <li><a href="/users/new" class="btn">Регистрация</a></li>
+                    <!-- Добавляем блок для авторизованного пользователя -->
+                    <li id="userInfo" style="display: none;">
+                        <span id="userName" style="margin-right: 10px; color: white;"></span>
+                        <button onclick="logout()" class="btn-outline"
+                            style="background: transparent; border: 1px solid white; color: white; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Выйти</button>
+                    </li>
                 </div>
             </ul>
         </nav>
@@ -170,11 +179,56 @@
         </div>
     </main>
 
+    <section class="container">
+        <div class="comments-section">
+            <h2>💬 Отзывы о курсе</h2>
+    
+            <!-- Статистика отзывов -->
+            <div class="rating-stats" id="courseRatingStats">
+                <div class="average-rating">
+                    <span class="rating-value" id="courseAverageRating">0.0</span>
+                    <div class="stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <span class="rating-count" id="courseReviewCount">(0 отзывов)</span>
+                </div>
+            </div>
+    
+            <!-- Форма оценки -->
+            <div class="rating-system">
+                <span class="rating-text">Оцените этот курс:</span>
+                <div class="rating-stars" data-task="course">
+                    <span class="star" data-value="1">☆</span>
+                    <span class="star" data-value="2">☆</span>
+                    <span class="star" data-value="3">☆</span>
+                    <span class="star" data-value="4">☆</span>
+                    <span class="star" data-value="5">☆</span>
+                </div>
+                <span class="rating-text" id="currentRatingCourse">Не оценено</span>
+            </div>
+    
+            <!-- Форма комментария -->
+            <div class="comment-form">
+                <textarea class="comment-input" placeholder="Оставьте ваш отзыв о курсе..."
+                    id="courseCommentInput"></textarea>
+                <button class="comment-submit" onclick="submitReviewForCourse()">Отправить отзыв</button>
+            </div>
+    
+            <!-- Список комментариев -->
+            <div class="comments-list" id="commentsListCourse">
+                <!-- Комментарии будут загружаться здесь -->
+            </div>
+
     <footer class="footer">
         <p>&copy; 2024 CodeBasics. Все права защищены.</p>
     </footer>
 
     <script>
+        
         // Обработчик кликов по урокам
         document.querySelectorAll('.lesson-item').forEach(item => {
             item.addEventListener('click', function () {
@@ -186,7 +240,12 @@
                 }
             });
         });
+        
     </script>
+    <!-- В конце body перед закрывающим тегом -->
+    <script src="/js/auth.js"></script>
+    <script src="/js/rating-stars.js"></script>
+    <script src="/js/course-reviews.js"></script>
 </body>
 
 </html>
