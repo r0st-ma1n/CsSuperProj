@@ -65,6 +65,14 @@
       "PackagePath": "staticwebassets\\js\\course-reviews.js"
     },
     {
+      "Id": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\js\\dashboard.js",
+      "PackagePath": "staticwebassets\\js\\dashboard.js"
+    },
+    {
+      "Id": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\js\\lesson-progress.js",
+      "PackagePath": "staticwebassets\\js\\lesson-progress.js"
+    },
+    {
       "Id": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\js\\lesson-tests.js",
       "PackagePath": "staticwebassets\\js\\lesson-tests.js"
     },

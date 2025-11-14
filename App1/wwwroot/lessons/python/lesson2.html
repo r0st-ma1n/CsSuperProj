@@ -326,21 +326,26 @@
     <script src="/js/reviews.js"></script>
     <script src="/js/rating-stars.js"></script>
     <script src="/js/lesson-tests.js"></script>
-
-    <!-- Скрипт для этого урока -->
+    <!-- Добавить перед закрывающим тегом body -->
+    <script src="/js/auth.js"></script>
+    <script src="/js/lesson-progress.js"></script>
+    
     <script>
-        const LESSON_ID = 2;
+        // Конфигурация для текущего урока
+        const CURRENT_LESSON_ID = 2; // ID этого урока
+        const CURRENT_COURSE_ID = 1; // ID курса Python
 
-        // Инициализация при загрузке
+        // Инициализация при загрузке страницы
         document.addEventListener('DOMContentLoaded', function () {
-            loadReviews(LESSON_ID);
-            loadRatingStats(LESSON_ID);
-        });
+            // Проверяем авторизацию
+            if (!getToken()) {
+                console.log('Пользователь не авторизован - прогресс не будет сохраняться');
+                return;
+            }
 
-        // Функция для этого урока
-        function submitReview() {
-            submitReviewForLesson(LESSON_ID);
-        }
+            // Инициализируем систему прогресса
+            initLessonProgress(CURRENT_LESSON_ID, CURRENT_COURSE_ID);
+        });
     </script>
 </body>
 

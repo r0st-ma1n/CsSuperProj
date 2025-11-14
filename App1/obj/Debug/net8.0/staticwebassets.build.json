@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "W8/2Y1D5VHQR5ypNVXPKgEYv6RgtPL0EIAYZTj6O6QU=",
+  "Hash": "AeZMh41IrZ+LBuylj5Pnl5ziEj/wQS1ZMaBABLK7CZo=",
   "Source": "App1",
   "BasePath": "_content/App1",
   "Mode": "Default",
@@ -283,8 +283,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "058o7d93tj",
-      "Integrity": "zLVl+Ijuah+aA5J/zPAkxapoosV6sjYtIdzEybGbB/M=",
+      "Fingerprint": "3jl9a8i9ma",
+      "Integrity": "P59Jsa7aumsxkLEm/fKgRBy6HivNXsMW24EfKV2tchQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\dashboard.html"
@@ -353,6 +353,48 @@
       "OriginalItemSpec": "wwwroot\\js\\course-reviews.js"
     },
     {
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\js\\dashboard.js",
+      "SourceId": "App1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
+      "BasePath": "_content/App1",
+      "RelativePath": "js/dashboard#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "c30g4ckt7g",
+      "Integrity": "iOds2Jjfq1DW2PFSbD6yO6oyO37O+e/kdyY6GA+f7i0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\dashboard.js"
+    },
+    {
+      "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\js\\lesson-progress.js",
+      "SourceId": "App1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\",
+      "BasePath": "_content/App1",
+      "RelativePath": "js/lesson-progress#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nbqgeeh8w4",
+      "Integrity": "vUBGvzK2RK2z9G1g4EoFALhU1qtivZICGKypxzdHf2g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\lesson-progress.js"
+    },
+    {
       "Identity": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\js\\lesson-tests.js",
       "SourceId": "App1",
       "SourceType": "Discovered",
@@ -367,8 +409,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "iii1crasnh",
-      "Integrity": "+osUJ33gmBQ/a18cTTMA3rSOazt99Es1vYfBzEs2O6M=",
+      "Fingerprint": "u1101u7pff",
+      "Integrity": "Uo7hh5VzLq5RXqK8IndMNtXf6S8svOiR6XEi6oIuVyg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\lesson-tests.js"
@@ -535,8 +577,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "0pijcijazv",
-      "Integrity": "ZKksuD0lvKgqBfc6cvaWQMe8ij/fOQg+lVW9LuUCpPo=",
+      "Fingerprint": "th77bqyo6t",
+      "Integrity": "sdTDfL/NR8BdWpegCsc7dVJJ7qyJwZu/tC2YZfogO7A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lessons\\python\\lesson1.html"
@@ -577,8 +619,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "kneht3j4ec",
-      "Integrity": "kEIXNdsvq9CpVeHEGrWSyjuMjABkxb/od2ket9prBF0=",
+      "Fingerprint": "tyz5w2tk5u",
+      "Integrity": "q4KzqX1BzqHsj66/9Y0VGLaFhojrNewdwKluU34Cg+g=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lessons\\python\\lesson2.html"
@@ -1759,7 +1801,7 @@
       ]
     },
     {
-      "Route": "dashboard.058o7d93tj.html",
+      "Route": "dashboard.3jl9a8i9ma.html",
       "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\dashboard.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1769,7 +1811,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8515"
+          "Value": "10512"
         },
         {
           "Name": "Content-Type",
@@ -1777,11 +1819,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zLVl+Ijuah+aA5J/zPAkxapoosV6sjYtIdzEybGbB/M=\""
+          "Value": "\"P59Jsa7aumsxkLEm/fKgRBy6HivNXsMW24EfKV2tchQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
+          "Value": "Fri, 14 Nov 2025 04:43:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1791,7 +1833,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "058o7d93tj"
+          "Value": "3jl9a8i9ma"
         },
         {
           "Name": "label",
@@ -1799,7 +1841,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-zLVl+Ijuah+aA5J/zPAkxapoosV6sjYtIdzEybGbB/M="
+          "Value": "sha256-P59Jsa7aumsxkLEm/fKgRBy6HivNXsMW24EfKV2tchQ="
         }
       ]
     },
@@ -1814,7 +1856,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8515"
+          "Value": "10512"
         },
         {
           "Name": "Content-Type",
@@ -1822,11 +1864,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zLVl+Ijuah+aA5J/zPAkxapoosV6sjYtIdzEybGbB/M=\""
+          "Value": "\"P59Jsa7aumsxkLEm/fKgRBy6HivNXsMW24EfKV2tchQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Nov 2025 23:57:13 GMT"
+          "Value": "Fri, 14 Nov 2025 04:43:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1836,7 +1878,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-zLVl+Ijuah+aA5J/zPAkxapoosV6sjYtIdzEybGbB/M="
+          "Value": "sha256-P59Jsa7aumsxkLEm/fKgRBy6HivNXsMW24EfKV2tchQ="
         }
       ]
     },
@@ -2087,8 +2129,8 @@
       ]
     },
     {
-      "Route": "js/lesson-tests.iii1crasnh.js",
-      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\js\\lesson-tests.js",
+      "Route": "js/dashboard.c30g4ckt7g.js",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\js\\dashboard.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2097,7 +2139,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5819"
+          "Value": "2611"
         },
         {
           "Name": "Content-Type",
@@ -2105,11 +2147,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+osUJ33gmBQ/a18cTTMA3rSOazt99Es1vYfBzEs2O6M=\""
+          "Value": "\"iOds2Jjfq1DW2PFSbD6yO6oyO37O+e/kdyY6GA+f7i0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Nov 2025 02:49:50 GMT"
+          "Value": "Fri, 14 Nov 2025 03:59:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2119,15 +2161,134 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "iii1crasnh"
+          "Value": "c30g4ckt7g"
         },
         {
           "Name": "label",
-          "Value": "js/lesson-tests.js"
+          "Value": "js/dashboard.js"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-+osUJ33gmBQ/a18cTTMA3rSOazt99Es1vYfBzEs2O6M="
+          "Value": "sha256-iOds2Jjfq1DW2PFSbD6yO6oyO37O+e/kdyY6GA+f7i0="
+        }
+      ]
+    },
+    {
+      "Route": "js/dashboard.js",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\js\\dashboard.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2611"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iOds2Jjfq1DW2PFSbD6yO6oyO37O+e/kdyY6GA+f7i0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Nov 2025 03:59:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iOds2Jjfq1DW2PFSbD6yO6oyO37O+e/kdyY6GA+f7i0="
+        }
+      ]
+    },
+    {
+      "Route": "js/lesson-progress.js",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\js\\lesson-progress.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7796"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vUBGvzK2RK2z9G1g4EoFALhU1qtivZICGKypxzdHf2g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Nov 2025 04:46:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vUBGvzK2RK2z9G1g4EoFALhU1qtivZICGKypxzdHf2g="
+        }
+      ]
+    },
+    {
+      "Route": "js/lesson-progress.nbqgeeh8w4.js",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\js\\lesson-progress.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7796"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vUBGvzK2RK2z9G1g4EoFALhU1qtivZICGKypxzdHf2g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Nov 2025 04:46:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nbqgeeh8w4"
+        },
+        {
+          "Name": "label",
+          "Value": "js/lesson-progress.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vUBGvzK2RK2z9G1g4EoFALhU1qtivZICGKypxzdHf2g="
         }
       ]
     },
@@ -2142,7 +2303,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5819"
+          "Value": "5887"
         },
         {
           "Name": "Content-Type",
@@ -2150,11 +2311,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+osUJ33gmBQ/a18cTTMA3rSOazt99Es1vYfBzEs2O6M=\""
+          "Value": "\"Uo7hh5VzLq5RXqK8IndMNtXf6S8svOiR6XEi6oIuVyg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Nov 2025 02:49:50 GMT"
+          "Value": "Fri, 14 Nov 2025 04:30:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2164,7 +2325,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+osUJ33gmBQ/a18cTTMA3rSOazt99Es1vYfBzEs2O6M="
+          "Value": "sha256-Uo7hh5VzLq5RXqK8IndMNtXf6S8svOiR6XEi6oIuVyg="
+        }
+      ]
+    },
+    {
+      "Route": "js/lesson-tests.u1101u7pff.js",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\js\\lesson-tests.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5887"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Uo7hh5VzLq5RXqK8IndMNtXf6S8svOiR6XEi6oIuVyg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Nov 2025 04:30:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u1101u7pff"
+        },
+        {
+          "Name": "label",
+          "Value": "js/lesson-tests.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Uo7hh5VzLq5RXqK8IndMNtXf6S8svOiR6XEi6oIuVyg="
         }
       ]
     },
@@ -2743,51 +2949,6 @@
       ]
     },
     {
-      "Route": "lessons/python/lesson1.0pijcijazv.html",
-      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson1.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "18704"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ZKksuD0lvKgqBfc6cvaWQMe8ij/fOQg+lVW9LuUCpPo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 14 Nov 2025 02:54:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "0pijcijazv"
-        },
-        {
-          "Name": "label",
-          "Value": "lessons/python/lesson1.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ZKksuD0lvKgqBfc6cvaWQMe8ij/fOQg+lVW9LuUCpPo="
-        }
-      ]
-    },
-    {
       "Route": "lessons/python/lesson1.html",
       "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson1.html",
       "Selectors": [],
@@ -2798,7 +2959,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "18704"
+          "Value": "18660"
         },
         {
           "Name": "Content-Type",
@@ -2806,11 +2967,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ZKksuD0lvKgqBfc6cvaWQMe8ij/fOQg+lVW9LuUCpPo=\""
+          "Value": "\"sdTDfL/NR8BdWpegCsc7dVJJ7qyJwZu/tC2YZfogO7A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Nov 2025 02:54:26 GMT"
+          "Value": "Fri, 14 Nov 2025 04:39:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2820,7 +2981,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ZKksuD0lvKgqBfc6cvaWQMe8ij/fOQg+lVW9LuUCpPo="
+          "Value": "sha256-sdTDfL/NR8BdWpegCsc7dVJJ7qyJwZu/tC2YZfogO7A="
+        }
+      ]
+    },
+    {
+      "Route": "lessons/python/lesson1.th77bqyo6t.html",
+      "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson1.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18660"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sdTDfL/NR8BdWpegCsc7dVJJ7qyJwZu/tC2YZfogO7A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Nov 2025 04:39:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "th77bqyo6t"
+        },
+        {
+          "Name": "label",
+          "Value": "lessons/python/lesson1.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sdTDfL/NR8BdWpegCsc7dVJJ7qyJwZu/tC2YZfogO7A="
         }
       ]
     },
@@ -2917,7 +3123,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "18924"
+          "Value": "19430"
         },
         {
           "Name": "Content-Type",
@@ -2925,11 +3131,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kEIXNdsvq9CpVeHEGrWSyjuMjABkxb/od2ket9prBF0=\""
+          "Value": "\"q4KzqX1BzqHsj66/9Y0VGLaFhojrNewdwKluU34Cg+g=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Nov 2025 03:25:43 GMT"
+          "Value": "Fri, 14 Nov 2025 04:06:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2939,12 +3145,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-kEIXNdsvq9CpVeHEGrWSyjuMjABkxb/od2ket9prBF0="
+          "Value": "sha256-q4KzqX1BzqHsj66/9Y0VGLaFhojrNewdwKluU34Cg+g="
         }
       ]
     },
     {
-      "Route": "lessons/python/lesson2.kneht3j4ec.html",
+      "Route": "lessons/python/lesson2.tyz5w2tk5u.html",
       "AssetFile": "C:\\Users\\parsh\\Документы\\GitProjects\\CsSuperProj\\App1\\wwwroot\\lessons\\python\\lesson2.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2954,7 +3160,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "18924"
+          "Value": "19430"
         },
         {
           "Name": "Content-Type",
@@ -2962,11 +3168,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kEIXNdsvq9CpVeHEGrWSyjuMjABkxb/od2ket9prBF0=\""
+          "Value": "\"q4KzqX1BzqHsj66/9Y0VGLaFhojrNewdwKluU34Cg+g=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Nov 2025 03:25:43 GMT"
+          "Value": "Fri, 14 Nov 2025 04:06:28 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2976,7 +3182,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "kneht3j4ec"
+          "Value": "tyz5w2tk5u"
         },
         {
           "Name": "label",
@@ -2984,7 +3190,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-kEIXNdsvq9CpVeHEGrWSyjuMjABkxb/od2ket9prBF0="
+          "Value": "sha256-q4KzqX1BzqHsj66/9Y0VGLaFhojrNewdwKluU34Cg+g="
         }
       ]
     },

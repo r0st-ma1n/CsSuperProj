@@ -21,7 +21,7 @@ public class UserProgressController : ControllerBase
     public async Task<IActionResult> CompleteLesson([FromBody] CompleteLessonRequest request)
     {
         var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "0");
-        
+
         // Check if already completed
         var existingProgress = await _context.UserProgresses
             .FirstOrDefaultAsync(up => up.UserId == userId && up.LessonId == request.LessonId);
@@ -43,7 +43,7 @@ public class UserProgressController : ControllerBase
 
         _context.UserProgresses.Add(progress);
 
-        // Update course progress
+        // Update course progress - ИСПРАВЬ ЭТУ ЧАСТЬ
         var enrollment = await _context.Enrollments
             .FirstOrDefaultAsync(e => e.UserId == userId && e.CourseId == request.CourseId);
 
@@ -52,13 +52,52 @@ public class UserProgressController : ControllerBase
             var totalLessons = await _context.Lessons.CountAsync(l => l.CourseId == request.CourseId);
             var completedLessons = await _context.UserProgresses
                 .CountAsync(up => up.UserId == userId && up.CourseId == request.CourseId && up.IsCompleted);
-            
+
+            // ДОБАВЬ +1 к completedLessons так как мы только что добавили новый прогресс
+            completedLessons += 1;
+
             enrollment.Progress = totalLessons > 0 ? (decimal)completedLessons / totalLessons * 100 : 0;
+
+            Console.WriteLine($"📊 Progress update: {completedLessons}/{totalLessons} = {enrollment.Progress}%");
         }
 
         await _context.SaveChangesAsync();
 
         return Ok(new { message = "Lesson completed successfully" });
+    }
+    
+    [HttpPost("ensure-enrollment")]
+    public async Task<IActionResult> EnsureEnrollment([FromBody] EnsureEnrollmentRequest request)
+    {
+        var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "0");
+
+        // Проверяем есть ли уже запись
+        var existingEnrollment = await _context.Enrollments
+            .FirstOrDefaultAsync(e => e.UserId == userId && e.CourseId == request.CourseId);
+
+        if (existingEnrollment == null)
+        {
+            // Создаем новую запись
+            var enrollment = new Enrollment
+            {
+                UserId = userId,
+                CourseId = request.CourseId,
+                EnrolledAt = DateTime.UtcNow,
+                Progress = 0
+            };
+
+            _context.Enrollments.Add(enrollment);
+            await _context.SaveChangesAsync();
+
+            return Ok(new { message = "Enrollment created" });
+        }
+
+        return Ok(new { message = "Enrollment already exists" });
+    }
+
+    public class EnsureEnrollmentRequest
+    {
+        public int CourseId { get; set; }
     }
 
     [HttpGet("my-progress")]

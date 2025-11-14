@@ -328,20 +328,17 @@
     <script src="/js/reviews.js"></script>
     <script src="/js/rating-stars.js"></script>
     <script src="/js/lesson-tests.js"></script>
-
-    <!-- Скрипт для этого урока -->
+    <script src="/js/lesson-progress.js"></script> <!-- ДОЛЖЕН БЫТЬ ПОСЛЕДНИМ -->
+    
     <script>
-        const LESSON_ID = 1;
-
-        // Инициализация при загрузке
         document.addEventListener('DOMContentLoaded', function () {
-            loadReviews(LESSON_ID);
-            loadRatingStats(LESSON_ID);
+            loadReviews(1);
+            loadRatingStats(1);
+            initLessonProgress(1, 1); // Прямо числа передаем
         });
 
-        // Функция для этого урока
         function submitReview() {
-            submitReviewForLesson(LESSON_ID);
+            submitReviewForLesson(1);
         }
     </script>
 </body>

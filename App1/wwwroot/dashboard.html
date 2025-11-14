@@ -189,67 +189,102 @@
         }
 
         async function loadDashboard() {
-            try {
-                const response = await fetch('/api/user/dashboard', {
-                    headers: {
-                        'Authorization': `Bearer ${token}`,
-                        'Content-Type': 'application/json'
+                try {
+                    console.log('🔄 Загружаем дашборд...');
+
+                    const response = await fetch('/api/user/dashboard', {
+                        headers: {
+                            'Authorization': `Bearer ${token}`,
+                            'Content-Type': 'application/json'
+                        }
+                    });
+
+                    console.log('📊 Статус ответа:', response.status);
+
+                    if (response.status === 401) {
+                        localStorage.removeItem('token');
+                        window.location.href = '/login';
+                        return;
                     }
-                });
 
-                if (response.status === 401) {
-                    localStorage.removeItem('token');
-                    window.location.href = '/login';
-                    return;
-                }
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
 
-                if (!response.ok) {
-                    throw new Error('Ошибка загрузки данных');
-                }
+                    const data = await response.json();
+                    console.log('📦 Данные с сервера:', data);
 
-                const data = await response.json();
+                    // Проверяем структуру данных
+                    if (!data.user) {
+                        console.error('❌ Нет данных пользователя');
+                        return;
+                    }
 
-                document.getElementById('userName').textContent = data.user.firstName + ' ' + data.user.lastName;
-                document.getElementById('userEmail').textContent = data.user.email;
-                document.getElementById('userRole').textContent = 'Роль: ' + (data.user.role === 'Teacher' ? 'Учитель' : 'Ученик');
+                    document.getElementById('userName').textContent = data.user.firstName + ' ' + data.user.lastName;
+                    document.getElementById('userEmail').textContent = data.user.email;
+                    document.getElementById('userRole').textContent = 'Роль: ' + (data.user.role === 'Teacher' ? 'Учитель' : 'Ученик');
 
-                document.getElementById('stats').innerHTML = `
-                    <div class="stat-card">
-                        <div class="stat-number">${data.statistics.totalCourses}</div>
-                        <div>Курсов</div>
+                    // Проверяем статистику
+                    if (data.statistics) {
+                        console.log('📈 Статистика:', data.statistics);
+                        document.getElementById('stats').innerHTML = `
+                <div class="stat-card">
+                    <div class="stat-number">${data.statistics.totalCourses || 0}</div>
+                    <div>Курсов</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">${data.statistics.totalLessonsCompleted || 0}</div>
+                    <div>Пройдено уроков</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">${data.statistics.overallProgress || 0}%</div>
+                    <div>Общий прогресс</div>
+                </div>
+            `;
+                    } else {
+                        console.warn('⚠️ Нет статистики');
+                        document.getElementById('stats').innerHTML = `
+                <div class="stat-card">
+                    <div class="stat-number">0</div>
+                    <div>Курсов</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">0</div>
+                    <div>Пройдено уроков</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">0%</div>
+                    <div>Общий прогресс</div>
+                </div>
+            `;
+                    }
+
+                    // Проверяем курсы
+                    if (data.enrollments && data.enrollments.length > 0) {
+                        console.log('🎓 Найдены курсы:', data.enrollments);
+                        const coursesHtml = data.enrollments.map(enrollment => `
+                <div class="course-item">
+                    <h3>${enrollment.course?.title || 'Без названия'}</h3>
+                    <p>${enrollment.course?.description || 'Описание отсутствует'}</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: ${enrollment.progress || 0}%"></div>
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-number">${data.statistics.totalLessonsCompleted}</div>
-                        <div>Пройдено уроков</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">${data.statistics.overallProgress}%</div>
-                        <div>Общий прогресс</div>
-                    </div>
-                `;
+                    <p>Прогресс: ${Math.round(enrollment.progress || 0)}% (${enrollment.completedLessons || 0}/${enrollment.totalLessons || 0} уроков)</p>
+                    <p>Записан: ${new Date(enrollment.enrolledAt).toLocaleDateString('ru-RU')}</p>
+                </div>
+            `).join('');
+                        document.getElementById('coursesList').innerHTML = coursesHtml;
+                    } else {
+                        console.log('📭 Нет записей на курсы');
+                        document.getElementById('coursesList').innerHTML = '<p>Вы еще не записаны на курсы</p>';
+                    }
 
-                if (data.enrollments && data.enrollments.length > 0) {
-                    const coursesHtml = data.enrollments.map(enrollment => `
-                        <div class="course-item">
-                            <h3>${enrollment.course.title}</h3>
-                            <p>${enrollment.course.description}</p>
-                            <div class="progress-bar">
-                                <div class="progress-fill" style="width: ${enrollment.progress}%"></div>
-                            </div>
-                            <p>Прогресс: ${Math.round(enrollment.progress)}% (${enrollment.completedLessons}/${enrollment.totalLessons} уроков)</p>
-                            <p>Записан: ${new Date(enrollment.enrolledAt).toLocaleDateString('ru-RU')}</p>
-                        </div>
-                    `).join('');
-                    document.getElementById('coursesList').innerHTML = coursesHtml;
-                } else {
-                    document.getElementById('coursesList').innerHTML = '<p>Вы еще не записаны на курсы</p>';
+                } catch (error) {
+                    console.error('❌ Ошибка загрузки дашборда:', error);
+                    document.getElementById('stats').innerHTML = '<p>Ошибка загрузки статистики</p>';
+                    document.getElementById('coursesList').innerHTML = '<p>Ошибка загрузки курсов</p>';
                 }
-
-            } catch (error) {
-                console.error('Ошибка:', error);
-                alert('Ошибка загрузки данных');
             }
-        }
 
         loadDashboard();
     </script>

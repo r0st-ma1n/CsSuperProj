@@ -95,19 +95,20 @@ function updateTestResults() {
         if (finalScore) finalScore.textContent = `${testResults.correct}/${testResults.total}`;
         if (testProgress) testProgress.style.width = `${percentage}%`;
 
-        // Сообщение в зависимости от результата
-        if (resultsMessage) {
-            if (percentage >= 80) {
-                resultsMessage.textContent = 'Отличный результат! Вы отлично усвоили материал.';
+        // === ДОБАВЬ ЭТО ДЛЯ АВТОМАТИЧЕСКОГО ЗАВЕРШЕНИЯ ===
+        // Если тест пройден успешно (2/3 или больше), показываем сообщение
+        if (percentage >= 66.7) { // 2 из 3 или больше
+            if (resultsMessage) {
+                resultsMessage.innerHTML = '🎉 Отлично! Тест пройден! Урок будет отмечен как завершенный.';
                 resultsMessage.style.color = '#27ae60';
-            } else if (percentage >= 60) {
-                resultsMessage.textContent = 'Хороший результат! Вы хорошо поняли основы.';
-                resultsMessage.style.color = '#f39c12';
-            } else {
-                resultsMessage.textContent = 'Рекомендуется повторить материал и пройти тест заново.';
+            }
+        } else {
+            if (resultsMessage) {
+                resultsMessage.innerHTML = '📚 Рекомендуется повторить материал и пройти тест заново.';
                 resultsMessage.style.color = '#e74c3c';
             }
         }
+        // === КОНЕЦ ДОБАВЛЕНИЯ ===
 
         // Детали результатов
         if (resultsDetails) {
